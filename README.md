@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Darryl Tanzil</h1>
 <h3 align="center">an tech enthusiast from Canada!</h3>
 
-- 🔭 I’m currently studying as a <a href="https://mybcom.sauder.ubc.ca/bucs" target="blank">Business and Computer Science major</a> at the University of British Columbia! 
-- 📈 A current Salesforce CRM dev + IT at <a href="https://sucasa.ca/" target="blank">Su Casa Design</a>
+- 🔭 I’m currently studying as a <a href="https://mybcom.sauder.ubc.ca/bucs" target="_blank">Business and Computer Science major</a> at the University of British Columbia! 
+- 📈 A current Salesforce CRM dev + IT at <a href="https://sucasa.ca/" target="_blank">Su Casa Design</a>
 - ✏️ Currently interested and learning React, and eventually web3
 
 Experienced in Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, and Racket as well as Premiere Pro, Photoshop, and After Effects.
@@ -11,7 +11,7 @@ If you have any project ideas or want to work with me, message me on any of my s
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/darryltanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="darryltanzil" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/darryl-tanzil-670190183/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="darryltanzil" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/users/darryl-tanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="darryl-tanzil" height="30" width="40" /></a>
 <a href="https://fb.com/darryltanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="darryltanzil" height="30" width="40" /></a>
 <a href="https://instagram.com/darryltanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="darryltanzil" height="30" width="40" /></a>
