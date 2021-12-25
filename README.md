@@ -25,7 +25,6 @@ If you have any project ideas or want to work with me, message me on any of my s
  - <a href="https://darryltanzil.sown.io/mapnumber/">Map Number</a> (2017) - HTML5, PHP
  - <a href="https://devpost.com/software/viridi">Viridi</a> - (2021)
  
- https://sown.io/techp/
 
 
 </p>
