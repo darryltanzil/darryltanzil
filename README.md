@@ -20,7 +20,7 @@ If you have any project ideas or want to work with me, message me on any of my s
 <p align="left">
  
 
- - <a href="https://flei.ca/"> Faith Life E-institute</a> - (2016) Co-dev on Bible Study Web Application, developed with Phone Gap, React, and HTML5
+ - <a href="https://flei.ca/"> Faith Life E-institute</a> - (2016) Co-dev on Bible Study Web Application, developed with Phone Gap, React Native, and HTML5
  - <a href="https://darryltanzil.sown.io/mapnumber/">Map Number</a> (2017) - HTML5, PHP
  - <a href="https://devpost.com/software/viridi">Viridi</a> - (2021)
 
