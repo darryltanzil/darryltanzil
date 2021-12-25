@@ -2,10 +2,10 @@
 <h3 align="center">an tech enthusiast from Canada!</h3>
 
 - 🔭 I’m currently studying as a <a href="https://mybcom.sauder.ubc.ca/bucs" target="blank">Business and Computer Science major</a> at the University of British Columbia! 
-- 📈 A current Salesforce CRM + IT dev at <a href="https://sucasa.ca/" target="blank">Su Casa Design</a>
+- 📈 A current Salesforce CRM dev + IT at <a href="https://sucasa.ca/" target="blank">Su Casa Design</a>
 - ✏️ Currently interested and learning React, and eventually web3
 
-Experienced in Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, and Racket
+Experienced in Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, and Racket as well as Premiere Pro, Photoshop, and After Effects.
 
 If you have any project ideas or want to work with me, message me on any of my social media platforms!
 
