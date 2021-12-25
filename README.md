@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Darryl Tanzil</h1>
 <h3 align="center">an tech enthusiast from Canada!</h3>
 
-- 🔭 I’m currently studying as a <a href="https://mybcom.sauder.ubc.ca/bucs" target="_blank">Business and Computer Science major</a> at the University of British Columbia! 
+- 🔭 I’m currently a first year <a href="https://mybcom.sauder.ubc.ca/bucs" target="_blank">Business and Computer Science major</a> at the University of British Columbia! 
 - 📈 A current Salesforce CRM dev + IT at <a href="https://sucasa.ca/" target="_blank">Su Casa Design</a>
 - ✏️ Currently interested and learning React, and eventually web3
 
