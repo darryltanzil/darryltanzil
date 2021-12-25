@@ -12,8 +12,8 @@ If you have any project ideas or want to work with me, message me on any of my s
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://www.linkedin.com/in/darryl-tanzil-670190183/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="darryltanzil" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/darryl-tanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="darryl-tanzil" height="30" width="40" /></a>
-<a href="https://fb.com/darryltanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="darryltanzil" height="30" width="40" /></a>
+<a href="https://stackoverflow.com/users/2726052/darryl-tanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="darryl-tanzil" height="30" width="40" /></a>
+<a href="https://www.facebook.com/people/Darryl-Tanzil/100008413937380/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="darryltanzil" height="30" width="40" /></a>
 <a href="https://instagram.com/darryltanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="darryltanzil" height="30" width="40" /></a>
 </p>
 
