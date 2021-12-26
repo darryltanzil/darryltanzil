@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently a first year <a href="https://mybcom.sauder.ubc.ca/bucs" target="_blank">Business and Computer Science major</a> at the University of British Columbia! 
 - 📈 A current Salesforce CRM dev + IT at <a href="https://sucasa.ca/" target="_blank">Su Casa Design</a>
-- ✏️ Currently interested in learning React, and eventually web3
+- ✏️ Currently interested in learning about cryptocurrency 
 
 Experienced in Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, and Racket as well as Premiere Pro, Photoshop, and After Effects.
 
