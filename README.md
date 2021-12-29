@@ -5,7 +5,7 @@
 - 📈 A current Salesforce CRM dev + IT at <a href="https://sucasa.ca/" target="_blank">Su Casa Design</a>
 - ✏️ Currently interested in learning about cryptocurrency 
 
-Experienced in Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, and Racket as well as Premiere Pro, Photoshop, and After Effects.
+Experienced in Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, Java, and Racket as well as Premiere Pro, Photoshop, and After Effects.
 
 If you have any project ideas or want to work with me, message me on any of my social media platforms!
 
