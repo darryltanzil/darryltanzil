@@ -17,7 +17,6 @@ If you have any project ideas or want to work with me, message me on any of my s
 <a href="https://instagram.com/darryltanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="darryltanzil" height="30" width="40" /></a>
 <br>
  <br>
- <a href="http://www.darrylt.me" target="_blank">www.darrylt.me</a>
 </p>
 <h3 align="left">Completed Projects</h3>
 <p align="left">
