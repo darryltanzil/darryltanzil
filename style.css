@@ -5,16 +5,13 @@
     --blur: 100;
     --opacity: 0;
 }
-
 body {
     padding: 0;
     margin: 0;
 }
-
 .container {
     height: 200vh;
 }
-
 .sticky {
     font-size: 5rem;
     font-weight: bold;
@@ -27,78 +24,71 @@ body {
     top: 0;
     filter: blur(calc(var(--blur) * 1px));
 }
-
 span {
     opacity: var(--opacity);
     transition: transform .2s !important;
 }
-
 .section-2 {
-    margin: 0 auto;
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: -1.2px;
-    color: rgb(0, 0, 0);
-    line-height: 1.22em;
-    width: 800px;
-  }
-  
-  .section-2 span {
-    --opacity: 0.3;
-    opacity: var(--opacity);
-  }
-  
-  .pro {
-    display: block;
-    margin-top: 2.2rem;
-  }
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  color: rgb(0, 0, 0);
+  line-height: 1.22em;
+  width: 800px;
+}
 
-  .flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .flex-item {
-    background: white;
-    padding: 5px;
-    width: 200px;
-    height: 150px;
-    margin-top: 10px;
-    line-height: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    text-align: center;
-  }
+.section-2 span {
+--opacity: 0.3;
+opacity: var(--opacity);
+}
 
-  .final-section {
-      padding-top: 30%;
-      font-size: 2rem;
-  }
-  
-  .container-2 {
-      padding-bottom: 300px !important;
-  }
+.pro {
+  display: block;
+  margin-top: 2.2rem;
+}
 
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
+.flex-item {
+  background: white;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+.final-section {
+  padding-top: 30%;
+  font-size: 2rem;
+}
+.container-2 {
+  padding-bottom: 300px !important;
+}
 a {
-    text-decoration: none;
-    color:blue;
-
+  text-decoration: none;
+  color:blue;
 }
 
 a:visited {
   color: #0940a4 !important;
 }
 
-
 span:hover {
   transform: scale(1.2) !important;
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
     html {
       transform: rotate(-90deg);
@@ -111,4 +101,4 @@ span:hover {
     }
   }
 
-  
+
