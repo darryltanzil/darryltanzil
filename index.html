@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Darryl Tanzil</title>
 
@@ -16,10 +17,22 @@
         particlesJS.load('particles-js', 'particles.json', function () {
             console.log('callback - particles.js config loaded');
         });
+
+        window.onload = function () {
+            document.body.className += " loaded";
+        }
     </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="Darryl, Darryl Tanzil, Business, Computer Science, Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, Java, Racket, Premiere Pro, Photoshop, After Effects">
+    <meta name="author" content="Darryl Tanzil">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    <div class="container" tg-name="blur" tg-from="0" tg-to="100" tg-edge="inset" >
+    <div class="container" tg-name="blur" tg-from="0" tg-to="100" tg-edge="inset">
         <div class="container" tg-name="opacity" tg-from="1" tg-to="0">
             <div class="sticky" id="particles-js">
                 <span style="text-align: center;position:absolute;">
@@ -183,4 +196,5 @@
         </div>
     </div>
 </body>
+
 </html>
