@@ -1,0 +1,53 @@
+:root {
+    font-family: Helvetica;
+    sans-serif;
+    font-size: 20px;
+    --blur: 100;
+    --opacity: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 200vh;
+}
+
+.sticky {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    filter: blur(calc(var(--blur) * 1px));
+}
+
+span {
+    opacity: var(--opacity);
+}
+
+.section-2 {
+    margin: 0 auto;
+    font-size: 3.4rem;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    color: rgb(0, 0, 0);
+    line-height: 1.22em;
+    width: 800px;
+  }
+  
+  .section-2 span {
+    --opacity: 0.3;
+    opacity: var(--opacity);
+  }
+  
+  .pro {
+    display: block;
+    margin-top: 2.2rem;
+  }
