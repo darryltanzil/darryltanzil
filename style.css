@@ -30,6 +30,7 @@ body {
 
 span {
     opacity: var(--opacity);
+    transition: transform .2s !important;
 }
 
 .section-2 {
@@ -86,8 +87,18 @@ span {
 
 a {
     text-decoration: none;
+    color:blue;
+
 }
 
+a:visited {
+  color: #0940a4 !important;
+}
+
+
+span:hover {
+  transform: scale(1.2) !important;
+}
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
     html {
       transform: rotate(-90deg);
@@ -99,3 +110,5 @@ a {
       left: 0;
     }
   }
+
+  
