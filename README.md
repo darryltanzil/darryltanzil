@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Darryl Tanzil</h1>
-<h3 align="center">an 18 year old from Canada!</h3>
+<h3 align="center">a tech enthusiast from Canada!</h3>
 
 - 🔭 I’m currently a first year <a href="https://mybcom.sauder.ubc.ca/bucs" target="_blank">Business and Computer Science major</a> at the University of British Columbia! 
 - 📈 A current Salesforce CRM dev + IT at <a href="https://sucasa.ca/" target="_blank">Su Casa Design</a>
@@ -23,9 +23,8 @@ If you have any project ideas or want to work with me, message me on any of my s
  
 
  - <a href="https://flei.ca/"> Faith Life E-institute</a> - (2016) Co-dev on Bible Study Web Application, developed with Phone Gap, React Native, and HTML5
- - <a href="https://sown.io/techp/"> Tech Apparel </a> - (2019) Sold T-shirts with unique embedded QR Codes; when scanned, redirected to this website where user could initialize any link they wanted, and it would redirect to that link in future. User could then update their link at any point with account. <br>
+ - <a href="https://sown.io/techp/"> Tech Apparel </a> - (2019) Sold T-shirts with unique embedded QR Codes; when scanned, redirected to this website where user could initialize any link they wanted, and it would redirect to that link in future. User could then update their link at any point with account.
  - <a href="https://darryltanzil.sown.io/mapnumber/">Map Number</a> (2017) - HTML5, PHP
- - <a href="https://github.com/darryltanzil/auto-zoom">FuZe</a> (2022) Chrome extension that opens zoom links automatically - HTML5, CSS, Chrome.api
  - <a href="https://devpost.com/software/viridi">Viridi</a> - (2021)
  
 
