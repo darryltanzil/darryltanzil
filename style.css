@@ -13,7 +13,7 @@ body {
     height: 200vh;
 }
 .sticky {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     letter-spacing: -0.03em;
     display: flex;
@@ -30,7 +30,7 @@ span {
 }
 .section-2 {
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -1.2px;
   color: rgb(0, 0, 0);
@@ -71,7 +71,7 @@ opacity: var(--opacity);
 }
 .final-section {
   padding-top: 30%;
-  font-size: 2rem;
+  font-size: 1.1rem;
 }
 .container-2 {
   padding-bottom: 300px !important;
@@ -99,6 +99,23 @@ span:hover {
       top: 100%;
       left: 0;
     }
+    
+}
+
+@media screen and (max-width: 767px){
+  .sticky {
+    font-size: 5rem;
   }
+  .sticky span span {
+    font-size: 2rem;
+  }
+  .section-2 {
+    font-size: 3rem;  
+  }
+  #experiences {
+    font-size: 3rem;
+  }
+}
+
 
 
