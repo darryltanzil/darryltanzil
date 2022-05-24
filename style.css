@@ -104,7 +104,7 @@ span:hover {
 
 @media screen and (max-width: 767px){
   .sticky {
-    font-size: 5rem;
+    font-size: 5rem; 
   }
   .sticky span span {
     font-size: 2rem;
