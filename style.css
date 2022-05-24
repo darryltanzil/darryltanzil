@@ -90,16 +90,15 @@ span:hover {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-    
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 767px){
@@ -115,6 +114,12 @@ span:hover {
   #experiences {
     font-size: 3rem;
   }
+  .anim-typewriter{
+    animation: typewriter 2s steps(44) 0.2s 1 normal backwards;}
+    @keyframes typewriter{
+    from{width: 0;}
+    to{width: 1em;}
+    }
 }
 
 .blinking-cursor {
@@ -181,11 +186,11 @@ span:hover {
 
 /* Animation */
 .anim-typewriter{
-animation: typewriter 2s steps(44) 0.2s 1 normal both;}
-@keyframes typewriter{
-from{width: 0;}
-to{width: 24em;}
-}
-
+  animation: typewriter 2s steps(44) 0.2s 1 normal backwards;}
+  @keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+  }
+  
 
 
