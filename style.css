@@ -115,10 +115,10 @@ span:hover {
     font-size: 3rem;
   }
   .anim-typewriter{
-    animation: typewriter 2s steps(44) 0.2s 1 normal backwards;}
+    animation: typewriter 0s steps(44) 0.2s 1 normal backwards;}
     @keyframes typewriter{
     from{width: 0;}
-    to{width: 1em;}
+    to{width: 0em;}
     }
 }
 
@@ -177,20 +177,17 @@ span:hover {
   }
 }
 
-.line-1{
-  border-right: 2px solid rgba(255,255,255,.75);
-  text-align: center;
-  white-space: nowrap;
+.typed-out{
   overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: 
+    typing 0.5s steps(20, end) forwards;
+  display:inline-block;
 }
-
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 2s steps(44) 0.2s 1 normal backwards;}
-  @keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-  }
-  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
 
