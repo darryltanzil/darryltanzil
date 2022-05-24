@@ -74,6 +74,11 @@
                         };
 
                         window.onload = function () {
+window.scroll({
+  top: 0, 
+  left: 0, 
+  behavior: 'smooth'
+});
                             var delayInMilliseconds = 1000; //1 second
                             setTimeout(function () {
                                 var elements = document.getElementsByClassName('typewrite');
@@ -87,7 +92,7 @@
                             // INJECT CSS
                             var css = document.createElement("style");
                             css.type = "text/css";
-                            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+                           // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
                             document.body.appendChild(css);
                             }, delayInMilliseconds);
                         };

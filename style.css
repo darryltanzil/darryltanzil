@@ -103,16 +103,16 @@ span:hover {
 
 @media screen and (max-width: 767px){
   .sticky {
-    font-size: 5rem; 
+    font-size: 5rem !important; 
   }
   .sticky span span {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .section-2 {
-    font-size: 3rem;  
+    font-size: 3rem !important;  
   }
   #experiences {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
   .anim-typewriter{
     animation: typewriter 0s steps(44) 0.2s 1 normal backwards;}
@@ -180,13 +180,13 @@ span:hover {
 .typed-out{
   overflow: hidden;
   white-space: nowrap;
-  width: 0;
+  width: 0%;
   animation: 
     typing 0.5s steps(20, end) forwards;
   display:inline-block;
 }
 @keyframes typing {
-  from { width: 0 }
+  from { width: 0% }
   to { width: 100% }
 }
 
