@@ -9,6 +9,8 @@ Experienced in Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, Java, and Ra
 
 If you have any project ideas or want to work with me, message me on any of my social media platforms!
 
+Check out my website <a href="https://darrylt.me">here.</a>
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
  <a href="https://stackoverflow.com/users/2726052/darryl-tanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="darryl-tanzil" height="30" width="40" /></a>
