@@ -196,4 +196,17 @@ span:hover {
   to { width: 100% }
 }
 
+img, a {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  border-radius: 20px;
+}
+img:hover {
+  top: -10px;
+}
+
+a:hover {
+  top: -5px;
+}
 
