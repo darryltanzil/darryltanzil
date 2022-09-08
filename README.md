@@ -9,7 +9,7 @@ class CSMajor:
 
     def __init__(self):
         self.name = "Darryl Tanzil"
-        self.role = "Computer Science + Business major @ UBC"
+        self.role = "Computer Science + Business Double Major @ UBC"
         self.job = "Salesforce Software Dev @ Su Casa Design"
         self.socials = ["https://www.darrylt.me", "www.linkedin.com/in/darryl-tanzil-670190183/"]
         self.isLookingForInternships = True
