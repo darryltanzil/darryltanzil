@@ -1,15 +1,26 @@
 <h1 align="center">Hi 👋, I'm Darryl Tanzil</h1>
 <h3 align="center">a tech enthusiast from Canada!</h3>
 
-- 🔭 I’m currently a second year <a href="https://mybcom.sauder.ubc.ca/bucs" target="_blank">Business and Computer Science major</a> at the University of British Columbia! 
-- 📈 A current Salesforce CRM dev + IT at <a href="https://sucasa.ca/" target="_blank">Su Casa Design</a>
-- ✏️ Currently interested in learning about cryptocurrency 
+```python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
-Experienced in Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, Java, and Racket as well as Premiere Pro, Photoshop, and After Effects.
+class CSMajor:
 
-If you have any project ideas or want to work with me, message me on any of my social media platforms!
+    def __init__(self):
+        self.name = "Darryl Tanzil"
+        self.role = "Computer Science + Business major @ UBC"
+        self.job = "Salesforce Software Dev @ Su Casa Design"
+        self.socials = ["https://www.darrylt.me", "www.linkedin.com/in/darryl-tanzil-670190183/"]
+        self.isLookingForInternships = True
 
-Check out my website <a href="https://darrylt.me">here.</a>
+    def say_hi(self):
+        print("If you have any project ideas or want to work with me, message me on any of my social media platforms!")
+
+
+me = CSMajor()
+me.say_hi()
+```
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
