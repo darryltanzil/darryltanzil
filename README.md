@@ -22,6 +22,8 @@ me = CSMajor()
 me.say_hi()
 ```
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=darryltanzil.darryltanzil&left_color=red&right_color=orange) 
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
  <a href="https://stackoverflow.com/users/2726052/darryl-tanzil" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="darryl-tanzil" height="30" width="40" /></a>
