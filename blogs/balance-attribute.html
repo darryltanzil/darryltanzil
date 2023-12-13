@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beauty In Balancing: Text-Wrap Balance Attribute</title>
+    <link rel="icon" href="hammer.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/unescaped-markup/prism-unescaped-markup.min.css" integrity="sha512-g33HCZ23fueSK96JEeoy9DelAlu7Ry5mtxqLk+zlEiPj7NIpFI6T9mybOvQxjBN50FALFDCviMXiLqWJcFwzaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/unescaped-markup/prism-unescaped-markup.min.js" integrity="sha512-su3P9CAb/80tGGN8pRycUQGze/CYgZ90Wn+3dmR0EGTD9hUP5BgVn26vEvHvAwe3K1LG1cHsz90H+jdEQL43FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .blog-post {
+            margin: 0 auto;
+            width: 750px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            min-height: 400px;
+        }
+
+        .blog-post h3 {
+            margin-bottom: 16px;
+            color: #212121;
+        }
+
+        .blog-post p {
+            color: #363232;
+            line-height: 1.6;
+        }
+        :root {
+            font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+            font-size: 20p;
+            --blur: 100;
+            --opacity: 0;
+        }       
+    </style>
+    <style>
+        @keyframes animateWidth {
+            0%   {width: 20%;}
+            50%  {width: 50%;}
+            100% {width: 100%;}
+        }
+    
+        .animated-div {
+            height: 150px;
+            animation-name: animateWidth;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="blog-post">
+        <h1>Beauty in Balancing: Text-Wrap Balance Attribute</h1>
+        <img src="hammer.png" width="100%"/>
+        <p>The <code>text-wrap: balance</code> or <code>text-wrap-style</code> attribute is an essential addition to any web developer's toolbox for responsiveness.
+             It provides a small but noticeable addition to any containers you have by equalizing the length of every line in your container, 
+             whenever it changes shape. Let's stick this attribute to your memory by <u>imagining it as a tool in the form of a hammer.</u></p>
+
+        <h3>🎯 Aiming the Hammer: Choosing Where to use the Attribute</h3>
+        <p>
+            For <i>titles, tooltips, or containers</i> in areas that you need to make clear,
+            this attribute reduces visual clutter and increases visibility. Have viewers with different devices,
+            each with their own unique aspect ratios? This attribute allows the length of lines to be consistent,
+            regardless of device size.
+        </p>
+        <p>Apart from these examples, if you notice an <i>excessive amount</i> of <code>&lt;wbr&gt;</code> or <code>&amp;shy;</code> attributes in your code, then use the <code>text-wrap: balance;</code> attribute instead to eliminate the tedium that comes with having to manually adding these attributes.</p>
+        <br /><script type="text/plain" class="language-markup"><!-- Example using &shy; or <wbr> -->
+<p>This is a very long word &shy; that needs to be broken <wbr> up into smaller parts.</p>
+</code></script>
+            <div class="animated-div">
+                <p>This is a very long word &shy; that needs to be broken <wbr> up into smaller parts.</p>
+            </div>
+            <br />
+            <script type="text/plain" class="language-markup"><!-- Example using text-wrap: balance -->
+<style>
+    .balanced-text {
+        text-wrap: balance;
+    }
+</style>
+<p class="balanced-text">This is a very long word that will be broken up into balanced lines.</p></script>
+            <div class="animated-div">
+                <style>
+                    .balanced-text {
+                        text-wrap: balance;
+                    }
+                </style>
+                <p class="balanced-text">This is a very long word that will be broken up into balanced lines.</p>
+            </div>
+        </pre>
+        <br /<>
+        
+        <h3>🔨 Nailing with Precision: Preventing Excessive Use</h3>
+        <style>
+            blockquote {
+                margin: 20px;
+                padding: 10px;
+                background-color: #f9f9f9;
+                border-left: 5px solid #7c7c7c;
+                font-style: italic;
+            }
+        </style>
+        <style>
+            .balanced-text {
+                text-wrap: balance;
+            }
+        </style>
+        <blockquote class="balanced-text">
+            <p>Great developers pick the right tool for the job. And the right tool for this current blurb is the text-wrapped attribute, because it keeps text crystal clear.</p>
+        </blockquote>
+        <p>       
+        There are a number of limitations that come with using this attribute. This feature has a <b>performance limit of <a href="https://developer.chrome.com/blog/css-text-wrap-balance#interactions_with_the_white-space_property">6 wrapped lines and under.</a></b> 
+        </p>
+        <p>With this limit in mind, anything other then headlines and short blurbs should not be using this attribute. As well as this, make sure not to blindly use * to apply text-balancing to every element. Think selectively about what needs balancing.</p>
+
+        <h3>🚫 Don't use a Hammer the Same Time as a Nail Puller: White-Space Attribute</h3>
+        <p>Another precaution to note is that <a href="https://developer.chrome.com/blog/css-text-wrap-balance#interactions_with_the_white-space_property" target="_blank">balancing text works against the white space property</a> since one asks for no wrapping, while the other asks for balanced wrapping.</p>
+        <script type="text/plain" class="language-markup"><style>
+.balanced-text {
+    text-wrap: balance;
+    white-space: normal;
+}
+</style>
+
+<div class="balanced-text">
+<p>This text will not balance because the 'white-space' property has been set, stopping the 'text-wrap: balance' property from taking effect</p>
+</div></script>
+        <div class="animated-div" style="height: 250px;">
+            <style>
+                .balanced-text-white {
+                    text-wrap: balance;
+                    white-space: normal;
+                }
+            </style>
+            
+            <div class="balanced-text-white">
+                <p>This text will not balance because the 'white-space' property has been set, stopping the 'text-wrap: balance' property from taking effect.</p>
+            </div>
+        </div>
+        
+        <p>To prevent this from happening, one can use <code>white-space: unset;</code> to ensure that the whitespace attribute is not set and text-wrap does not conflict.</p>
+        
+        <h3>🏃 Hammering Takes Effort: Why the Limitation?</h3>
+        <p>The browser balances the text by conducting a <a href="https://www.geeksforgeeks.org/binary-search/">binary search</a> for the smallest width not causing an addition line, stopping at one CSS Pixel. Binary Search is more CPU intensive then regular CSS styling, which is why it should be used sparingly.</p>
+
+        <i>For those interested in algorithms, you can see binary search in action in <a href="https://www.youtube.com/watch?v=D9dq8UfD89Q&list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K&index=13">my video</a> here.</i>
+
+        <h3>Drive the Nail Home: Conclusion & References</h3>
+        <p>Next time you develop for the web, think of the tools you can use to build your product. For the <code>text-wrap: balance;</code> attribute's case, the 6 line limit tradeoff has to be considered along with the benefits of having visually clear titles and blurbs. It never hurts to have another tool at your disposal 😉</p>
+        <p>Sources:</p>
+        <a href="https://developer.chrome.com/blog/css-text-wrap-balance#interactions_with_the_white-space_property" target="_blank">Chrome's documentation on text-wrap</a> <br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap">Mozilla's documentation on text-wrap</a> <br />
+        <a href="https://drafts.csswg.org/css-text-4/#text-wrap-style">W3C Editor's Draft</a>
+        <img src="compatible.png    " width="100%"/>
+    </div>
+</body>
+</html>
