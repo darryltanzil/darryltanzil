@@ -109,7 +109,7 @@
             <p>Great developers pick the right tool for the job. And the right tool for this current blurb is the text-wrapped attribute, because it keeps text crystal clear.</p>
         </blockquote>
         <p>       
-        There are a number of limitations that come with using this attribute. This feature has a <b>performance limit of <a href="https://developer.chrome.com/blog/css-text-wrap-balance#interactions_with_the_white-space_property">6 wrapped lines and under.</a></b> 
+        There are a number of limitations that come with using this attribute. This feature has a <b>performance limit of <a href="https://developer.chrome.com/blog/css-text-wrap-balance#interactions_with_the_white-space_property" target="_blank">6 wrapped lines and under.</a></b> 
         </p>
         <p>With this limit in mind, anything other then headlines and short blurbs should not be using this attribute. As well as this, make sure not to blindly use * to apply text-balancing to every element. Think selectively about what needs balancing.</p>
 
@@ -141,16 +141,16 @@
         <p>To prevent this from happening, one can use <code>white-space: unset;</code> to ensure that the whitespace attribute is not set and text-wrap does not conflict.</p>
         
         <h3>🏃 Hammering Takes Effort: Why the Limitation?</h3>
-        <p>The browser balances the text by conducting a <a href="https://www.geeksforgeeks.org/binary-search/">binary search</a> for the smallest width not causing an addition line, stopping at one CSS Pixel. Binary Search is more CPU intensive then regular CSS styling, which is why it should be used sparingly.</p>
+        <p>The browser balances the text by conducting a <a href="https://www.geeksforgeeks.org/binary-search/" target="_blank">binary search</a> for the smallest width not causing an addition line, stopping at one CSS Pixel. Binary Search is more CPU intensive then regular CSS styling, which is why it should be used sparingly.</p>
 
-        <i>For those interested in algorithms, you can see binary search in action in <a href="https://www.youtube.com/watch?v=D9dq8UfD89Q&list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K&index=13">my video</a> here.</i>
+        <i>For those interested in algorithms, you can see binary search in action in <a href="https://www.youtube.com/watch?v=D9dq8UfD89Q&list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K&index=13" target="_blank">my video</a> here.</i>
 
         <h3>🏠 Drive the Nail Home: Conclusion & References</h3>
         <p>Next time you develop for the web, think of the tools you can use to build your product. For the <code>text-wrap: balance;</code> attribute's case, the 6 line limit tradeoff has to be considered along with the benefits of having visually clear titles and blurbs. It never hurts to have another tool at your disposal 😉</p>
         <p>Sources:</p>
         <a href="https://developer.chrome.com/blog/css-text-wrap-balance#interactions_with_the_white-space_property" target="_blank">Chrome's documentation on text-wrap</a> <br />
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap">Mozilla's documentation on text-wrap</a> <br />
-        <a href="https://drafts.csswg.org/css-text-4/#text-wrap-style">W3C Editor's Draft</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap" target="_blank">Mozilla's documentation on text-wrap</a> <br />
+        <a href="https://drafts.csswg.org/css-text-4/#text-wrap-style" target="_blank">W3C Editor's Draft</a>
         <img src="compatible.png    " width="100%"/>
     </div>
 </body>
