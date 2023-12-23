@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beauty In Balancing: Text-Wrap Balance Attribute</title>
+    <link rel="icon" href="hammerreal.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/unescaped-markup/prism-unescaped-markup.min.css" integrity="sha512-g33HCZ23fueSK96JEeoy9DelAlu7Ry5mtxqLk+zlEiPj7NIpFI6T9mybOvQxjBN50FALFDCviMXiLqWJcFwzaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/unescaped-markup/prism-unescaped-markup.min.js" integrity="sha512-su3P9CAb/80tGGN8pRycUQGze/CYgZ90Wn+3dmR0EGTD9hUP5BgVn26vEvHvAwe3K1LG1cHsz90H+jdEQL43FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .blog-post {
+            margin: 0 auto;
+            width: 750px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            min-height: 400px;
+        }
+
+        .blog-post h3 {
+            margin-bottom: 16px;
+            color: #212121;
+        }
+
+        .blog-post p {
+            color: #363232;
+            line-height: 1.6;
+        }
+        :root {
+            font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+            font-size: 20p;
+            --blur: 100;
+            --opacity: 0;
+        }
+        .technologies {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+    <style>
+        @keyframes animateWidth {
+            0%   {width: 20%;}
+            50%  {width: 50%;}
+            100% {width: 100%;}
+        }
+
+        .animated-div {
+            height: 150px;
+            animation-name: animateWidth;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+<div class="blog-post">
+    <div>
+        <h1>Introduction</h1>
+        <p>
+            During my time at Electronic Arts, I worked on projects I thought were extremely interesting, which was something my tech lead took special care to acknowledge. Along with the projects listed below, I worked on some smaller tickets which helped me
+            become familiar with different aspects of the codebase.
+            <h2>My Projects</h2>
+            <ul>
+                <li>Project 1: Log Generation & Optimization with Protocol Buffering & Compression</li>
+                <li>Project 2: Test Optimization through caching, time simulation, & code traversal</li>
+                <li>Project 3: Exception Grabbing using Python, Google Cloud, Kibana & Elastic Search</li>
+                <li>Project 4: Building Internal Tooling for server migration</li>
+            </ul>
+            <h3>Project 1: Log Generation & Optimization with Protocol Buffering & Compression</h3>
+            <br />
+            <img src="../protobuf_arch.png" width="100%">
+            The goal of my research was to see if there were alternative data transfer formats which were faster than the current form we were using, XML.
+            This then led me to Protocol buffering, a format which serialized data in binary rather than via text form. <br /> <br />
+            Over the first half of the internship I researched, proved the potential speed boost, and then was given permission to re-create the logging system to use this format instead, along with various compression formats
+            like Zstd, Lz4, and Gzip. <br /> <br />
+            An issue I ran into while developing it was that the logs were being streamed to a file in realtime, so there was no way to differentiate where one log ended and the other began. To fix this, I utilized variable length delimiting, putting into the binary
+            stream the number of bytes each entry log was, and then writing a python program to parse it, and cut it at a given point in the stream. With this stream of bytes I could then de-parse it into CSV files and clean documents through my Python programs.<br /> <br>
+
+            I then modified the code parsing this binary stream to also parse it via various compression methods, in order to compare them against each other. <br> <br>
+            I tested the storage usage using Jenkins preflights, and the CPU & Memory usage with Java Flight Recorder, checking the amount of samples taken within a certain method occuring in the callstack, and comparing it with each other. <br /> <br />
+            In order to test the validity of the logs I created a series of python programs which would compare them together.
+            I then wrote a research paper on my findings, and presented it via a 30 minute tech meeting to the engineering team!
+            The results worked well on a local server, and steps were made to implement this on the live Google Cloud Platform servers, a process which went beyond the length
+            of my internship. <br /> <br />
+
+            <span class="technologies">Technologies: Java, Protocol Buffering, Python</span>
+            <h3>Project 2: Test Optimization through caching, time simulation, & code traversal</h3>
+             <img src="../dfs.png" width="100%"> <br>
+            I created a Kotlin program which used depth first search to traverse through references of methods in the code and score it based on the amount of references, the nature of the reference, and whether those refernces had references themselves. This helped Development Directors and others
+            to determine which parts of the codebase could be removed, and allowed me and other engineers to prioritize as I was tasked with deletion. <br /> <br />
+
+            I was also tasked with optimizing and removing redundant areas of the codebase, which required a very strong understanding of the codebase and cooperation between multiple cross-functional teams. <span style="color: red;">I removed thousands of lines of code, collaborated with Producers, the Client-side team, the Tools team, and the QV team in order to ensure that none of the changes would
+            affect live.</span>
+            <br /> <br />
+            I also refactored tests to use bulk API requests as opposed to multiple smaller ones, and investigated other ways to optimize the tests that still needed to be there. <br> <br>
+            While doing this removal, I also suggested and created prototypes for improving the codebase (creating custom annotations, porting to JUnit 5 instead of 4, introducing a simulated clock object instead of relying on Java's default implementation of time, etc.)
+            <br /> <br />
+            <u>These changes ended up reducing pre-flight time by 25 minutes. Assuming 15 pre-flights a day for 22 working days a month, and 12 months a year, this amounts to over 1500 engineering hours saved waiting on building the preflight.</u> <br /> <br>
+            <span class="technologies">Technologies: Java, Kotlin, SQL, JUnit, Mockito, Spring</span>
+            <h3>Project 3: Exception Grabbing using Python, Kibana & Elastic Search</h3>
+            <img src="../elastic%20search.png" width="100%">
+            I set up and developed Python scripts which captured Java exceptions for different Google Cloud Platform servers, parsed using Kibana & Elastic Search. <br /> <br>
+            <span class="technologies">Technologies: Python, Linux, Bash, Kibana, Elastic Search, Google Cloud Platform</span>
+            <h3>Project 4: Building Internal Tooling for Game Year migration</h3>
+            I created new features within internal tools which allowed for easier migration of year to year migration of game data.
+        </p>
+        <h3>Overall Highlights</h3>
+        <ul>
+            <li>I was able to work on projects had variety and impact. Projects I worked on ranged from modifying the Spring-like internal framework, to creating developing/modifying microservices, to creating internal tooling! While I was working on various projects and tickets, ROI (return on investment) was a factor that was consistently stressed, which felt very refreshing.</li> <br />
+            <li>I participated in weekly design meetings with senior engineers which allowed me to gain insight in various tradeoffs regarding system design, microservices architecture, solid coding practices, and creating stable
+                software that's able to handle millions of requests a second. Towards the end, <u>I was given the opportunity to lead two of these meetings.</u>
+            </li>
+        </ul>
+
+        <h3>Tools of the Trade</h3>
+        <p>
+            My work was primarily creating/modifying services developed in Java with internal frameworks similar to Spring, as well as Maven, Junit, and Nexus. I also utilized Jenkins as a build pipeline, JAAS for management software, JFR (Java Flight Recorder) for CPU Profiling, Confluence for documentation writing, Perforce for a VCS System, Smartbear Collaborator for code reviewing, Google Cloud for cloud computing, and Elastic Search & Kibana for exception handling. I used Fiddler as debugging proxy, as well as Postman for API debugging.
+        </p>
+        <p>
+            I used IntelliJ as my IDE of choice, though this was a hot topic amongst the team I was working in.
+        </p>
+
+
+    </div>
+</div>
+</body>
+</html>
