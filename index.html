@@ -29,9 +29,54 @@
 </head>
 
 <body>
+    <nav id="navbar">
+        <a href="#internship">Internships</a>
+        <a href="#soft-dev">Software Development</a>
+        <a href="#archive">Older Projects</a>
+        <!-- Add other navigation links as needed -->
+    </nav>
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+                navbar.style.top = '-50px';
+            } else {
+                navbar.style.top = '0';
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        }, false);
+    </script>
+    <style>
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            color: black;
+            padding: 20px;
+            transition: top 0.3s;
+        }
+
+        #navbar a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+            font-size: 20px;
+            --blur: 100;
+            --opacity: 0;
+        }
+        #navbar a:hover {
+        }
+    </style>
     <div class="container" tg-name="blur" tg-from="0" tg-to="100" tg-edge="inset">
         <div class="container" tg-name="opacity" tg-from="1" tg-to="0">
-            <div class="sticky" id="particles-js">
+            <div class="sticky" id="particles-js" style="z-index: -1">
                 <span style="text-align: center;position:absolute;">
                     <div class="typed-out"><span style="font-size: 2rem;">Hello world,</span> <br> I'm Darryl Tanzil. <span class="blinking-cursor"
                             style="font-size: 3.4rem;position: absolute;padding-left: 10px;">|</span></div>
@@ -111,26 +156,23 @@
                 <div tg-name="_" tg-ref="body" tg-from="1" tg-to="10" tg-step="1" class="section-2" tg-edge="cover">
                     <section tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
                         <span tg-name="opacity" tg-filter="2" tg-follow="container">
-                            I am a third year <p style="color: #546e9e;display: inline;">computer science and business major</p>
+                            A third year <p style="color: #546e9e;display: inline;">computer science and business major</p>
                             at the University of British Columbia.
                         </span>
                         <br /> <br />
                         <span tg-name="opacity" tg-filter="3" tg-follow="container">
                             ⚽️
-                            Previously Software Engineer interned @ <img src="ea.png" width="auto" style="max-width:27%; width: auto;border-radius: 0px !important; transform: translateY(13%);image-rendering: -webkit-optimize-contrast !important; image-rendering: pixelated; filter: blur(0); -webkit-filter: blur(0);"/></b>.
+                            A previous Software Engineer Intern @ <img src="ea.png" width="auto" style="max-width:27%; width: auto;border-radius: 0px !important; transform: translateY(13%);image-rendering: -webkit-optimize-contrast !important; image-rendering: pixelated; filter: blur(0); -webkit-filter: blur(0);"/></b>.
                         </span>
                         <br /> <br />
-                        <span tg-name="opacity" tg-filter="4" tg-follow="container">🧑‍💻 Also Previously SWE'd @
+                        <span tg-name="opacity" tg-filter="4" tg-follow="container">🧑‍ Previously SWE'd @
                             <p style="color: #546e9e;display: inline;" target="_blank"> 🏠 Su Casa Design</p>, & <p style="color: #546e9e;display: inline;" target="_blank"> 🎮 UBC Game Development. 
                             </p></span>
-                        <br /> <br />
-                        <span tg-name="opacity" tg-filter="4" tg-follow="container">✏️ Certified Salesforce Data
-                            Architect (2019) and Platform Dev I (2018).</span>
                         <br /> <br />
                         <span tg-name="opacity" tg-filter="5" tg-follow="container" id="experiences">
                             💻 Experienced in React, ExpressJS, Node.JS, Java, Python, C#, C++, PHP, MySQL, and Unity & Salesforce development.
                         </span>
-                        <br> <br>
+                        <br /> <br />
                         <span tg-name="opacity" tg-filter="6" tg-follow="container">Have any ideas?</span>
                         <br>
                         <br>
@@ -150,17 +192,6 @@
                                             alt="darryltanzil" height="125" width="175" /></a></li>
                                 <li class="flex-item"><a href="https://youtube.com/playlist?list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K&si=U_OlutaefpF6fkJG" target="blank"><img
                                             align="center" width="150" src="Youtube_logo.png" /></a></li>
-                                <!--
-                                <li class="flex-item"><a
-                                        href="https://www.facebook.com/people/Darryl-Tanzil/100008413937380/"
-                                        target="blank"><img align="center"
-                                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
-                                            alt="darryltanzil" height="125" width="175" /></a></li>
-                                <li class="flex-item"><a href="https://instagram.com/darryltanzil" target="blank"><img
-                                            align="center"
-                                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
-                                            alt="darryltanzil" height="125" width="175" /></a></li>
-                                -->
                                 <li class="flex-item"><a href="mailto:darryltanzil@gmail.com" target="blank"><img
                                             align="center"
                                             src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png"
@@ -173,7 +204,7 @@
                     </section>
                     <div class="final-section">
                         <div style="border: 10px solid rgb(200, 197, 197); padding:30px;padding-left: 60px;  border-radius: 30px; padding-bottom: 100px;">
-                        <h1 align="left"> 🚧   Completed Projects</h3>
+                        <h1 align="left"> 🚧 My Experiences</h3>
                             • <a href="#internship">💻 Software Engineer Internships</a> <br>
                                 <a href="#ea" class="indent">• Electronic Arts ⚽️</a> <br> <br>
                             • <a href="#soft-dev">🤖 Software Development</a> <br>
@@ -181,7 +212,9 @@
                                 <a href="#dsalgos" class="indent">• Data Structures + Algorithms Youtube Channel</a> <br>
                                 <a href="#soap" class="indent">• Soapify </a> <br>
                                 <a href="#min-ai" class="indent">• Minutes.AI</a> <br>
-                                <a href="#cyber" class="indent">• Cybercision</a> <br> 
+                                <a href="#cyber" class="indent">• Cybercision</a> <br>
+                            <br>
+                            • <a href="#archive">⚙️ Older Software Projects</a> <br>
                                 <a href="#basemap" class="indent">• Basemap Optimizer</a> <br>
                                 <a href="#flei" class="indent">• Faith Life E-institute</a> <br>
                                 <a href="#charitize" class="indent">• Charitize</a> <br>
@@ -190,10 +223,7 @@
                             <br>
                             • <a href="#pm">📊 Product Management</a> <br>
                                 <a href="#kinzoo" class="indent">• Kinzoo Product Management Sprint</a> <br>
-                                <a href="#areward" class="indent">• AReward ProduHacks Submission</a> <br>  
-                                <br /> <br />
-                            <p style="font-size: 1.2em; margin: 0; padding: 0;">
-                            </p>
+                                <a href="#areward" class="indent">• AReward ProduHacks Submission</a> <br>
                         </div>
                         <br> <br> <br>
                         <h2 align="left" id="internship">💻 Software Engineer Internships</h2>
@@ -222,7 +252,8 @@
                                 Node.JS, Axios, Spotify Web
                                 API</span> <br><br>
                             <a href="https://github.com/darryltanzil/soapify"><img src="soapify.png" style="width: 100%" /></a>
-                            <br><br>
+                            <br><br><br>
+                            <h2 align="left" id="archive">⚙️ Older Software Projects</h2>
                             <a href="https://github.com/darryltanzil/basefinder" id="basemap">Basemap Optimizer</a> - 
                             Uses BFS Algorithm, RGB encoding, and self-implemented data structures to determine the 'longest shortest path' within a maze. <span class="technologies">- C++</span> <br>
                             <br>

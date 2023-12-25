@@ -7,54 +7,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/unescaped-markup/prism-unescaped-markup.min.css" integrity="sha512-g33HCZ23fueSK96JEeoy9DelAlu7Ry5mtxqLk+zlEiPj7NIpFI6T9mybOvQxjBN50FALFDCviMXiLqWJcFwzaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/unescaped-markup/prism-unescaped-markup.min.js" integrity="sha512-su3P9CAb/80tGGN8pRycUQGze/CYgZ90Wn+3dmR0EGTD9hUP5BgVn26vEvHvAwe3K1LG1cHsz90H+jdEQL43FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <style>
-        .blog-post {
-            margin: 0 auto;
-            width: 750px;
-            padding: 20px;
-            background-color: #FFFFFF;
-            min-height: 400px;
-        }
-
-        .blog-post h3 {
-            margin-bottom: 16px;
-            color: #212121;
-        }
-
-        .blog-post p {
-            color: #363232;
-            line-height: 1.6;
-        }
-        :root {
-            font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-            font-size: 20p;
-            --blur: 100;
-            --opacity: 0;
-        }
-        .technologies {
-            color: green;
-            font-weight: bold;
-        }
-    </style>
-    <style>
-        @keyframes animateWidth {
-            0%   {width: 20%;}
-            50%  {width: 50%;}
-            100% {width: 100%;}
-        }
-
-        .animated-div {
-            height: 150px;
-            animation-name: animateWidth;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-            border: 1px solid black;
-        }
-    </style>
-
+    <link rel="stylesheet" href="blog-css.css" />
 </head>
 <body>
 <div class="blog-post">
+    <a href="../index.html#ea" class="back-button">&#8592; Previous Page</a>
     <div>
         <h1>My Internship Experience @ Electronic Arts</h1>
         <p>
@@ -62,14 +19,14 @@
             <br /> <br />
             During my time as a software engineer intern @ Electronic Arts, I worked on projects I thought were extremely interesting. Along with the projects listed below, I worked on some smaller tickets which helped me
             become familiar with different aspects of the codebase.
-            <h2>My Projects</h2>
+        <h2>My Projects</h2>
             <ul>
-                <li>Project 1: Log Generation & Optimization with Protocol Buffering & Compression</li>
-                <li>Project 2: Test Optimization through caching, time simulation, & code traversal</li>
-                <li>Project 3: Exception Grabbing using Python, Google Cloud, Kibana & Elastic Search</li>
-                <li>Project 4: Building Internal Tooling for server migration</li>
+                <li><a href="#project1">Project 1: Log Generation & Optimization with Protocol Buffering & Compression</a></li>
+                <li><a href="#project2">Project 2: Test Optimization through caching, time simulation, & code traversal</a></li>
+                <li><a href="#project3">Project 3: Exception Grabbing using Python, Google Cloud, Kibana & Elastic Search</a></li>
+                <li><a href="#project4">Project 4: Building Internal Tooling for server migration</a></li>
             </ul>
-            <h3>Project 1: Log Generation & Optimization with Protocol Buffering & Compression</h3>
+            <h3 id="project1">Project 1: Log Generation & Optimization with Protocol Buffering & Compression</h3>
             <br />
             <img src="../protobuf_arch.png" width="100%">
             The goal of my research was to see if there were alternative data transfer formats which were faster than the current form we were using, XML.
@@ -87,7 +44,7 @@
             of my internship. <br /> <br />
 
             <span class="technologies">Technologies: Java, Protocol Buffering, Python</span>
-            <h3>Project 2: Test Optimization through caching, time simulation, & code traversal</h3>
+            <h3 id="project2">Project 2: Test Optimization through caching, time simulation, & code traversal</h3>
              <img src="../dfs.png" width="100%"> <br>
             I created a Kotlin program which used depth first search to traverse through references of methods in the code and score it based on the amount of references, the nature of the reference, and whether those refernces had references themselves. This helped Development Directors and others
             to determine which parts of the codebase could be removed, and allowed me and other engineers to prioritize as I was tasked with deletion. <br /> <br />
@@ -100,11 +57,11 @@
             <br /> <br />
             <u>These changes ended up reducing pre-flight time by 25 minutes. Assuming 15 pre-flights a day for 22 working days a month, and 12 months a year, this amounts to over 1500 engineering hours saved waiting on building the preflight.</u> <br /> <br>
             <span class="technologies">Technologies: Java, Kotlin, SQL, JUnit, Mockito, Spring</span>
-            <h3>Project 3: Exception Grabbing using Python, Kibana & Elastic Search</h3>
+            <h3 id="project3">Project 3: Exception Grabbing using Python, Kibana & Elastic Search</h3>
             <img src="../elastic%20search.png" width="100%">
             I set up and developed Python scripts which captured Java exceptions for different Google Cloud Platform servers, parsed using Kibana & Elastic Search. <br /> <br>
             <span class="technologies">Technologies: Python, Linux, Bash, Kibana, Elastic Search, Google Cloud Platform</span>
-            <h3>Project 4: Building Internal Tooling for Game Year migration</h3>
+            <h3 id="project4">Project 4: Building Internal Tooling for Game Year migration</h3>
             I created new features within internal tools which allowed for easier migration of year to year migration of game data.
         </p>
         <h3>Overall Highlights</h3>
@@ -122,8 +79,6 @@
         <p>
             I used IntelliJ as my IDE of choice, though this was a hot topic amongst the team I was working in.
         </p>
-
-
     </div>
 </div>
 </body>
