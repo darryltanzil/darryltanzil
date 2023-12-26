@@ -106,7 +106,7 @@ span:hover {
     left: 0;
   }
   .final-section {
-    font-size: 16px;
+    font-size: 2rem !important;
   }
 }
 
