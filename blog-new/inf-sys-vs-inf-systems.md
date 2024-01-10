@@ -99,4 +99,13 @@ user expectation
 • Compliance and Regulations
 • Ethical Considerations
 
+### IT Value
+IT value is the measurable benefits and contributions that IT assets, services, projects, and initiatives provide to the organization.
+> "The world's most valuable resource is no longer oil, but data" - the Economist, 2017
+
+Data's different from oil since it has zero marginal cost to replicate, is easy to scale, and doesn't have any rivalry. Most IT spending is intangible (cannot be properly measured).
+
+
+
+
 (Wed Jan 10)
