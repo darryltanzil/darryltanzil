@@ -46,6 +46,7 @@ h1 { border-bottom:1px dotted grey }
 
 ### Jan 2024
 
+* 2024/01/11: [Database Overview](database-overview.md) { #cpsc-304, #ubc }
 * 2024/01/10: [Info Systems vs Info Tech](inf-sys-vs-inf-systems.md) { #comm-438, #ubc }
    
 ### Aug 2022
