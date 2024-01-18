@@ -9,19 +9,27 @@
     <script src="particles.json"></script>
     <script src="customscroll.min.js"></script>
     <script>
-        particlesJS.load('particles-js', 'particles.json', function () { console.log('callback - particles.js config loaded'); });
-        window.onload = function () { document.body.className += " loaded"; } 
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+        window.onload = function () {
+            document.body.className += " loaded";
+        }
     </script>
     <link rel="icon" href="pfp.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="description" content="Darryl Tanzil's website; feel free to connect!">
     <meta name="keywords"
-        content="Darryl, Darryl Tanzil, Business, Computer Science, Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, Java, Racket, Premiere Pro, Photoshop, After Effects">
+          content="Darryl, Darryl Tanzil, Business, Computer Science, Salesforce Dev, Apex, HTML5, PHP, MySQL, C#, Python, Java, Racket, Premiere Pro, Photoshop, After Effects">
     <meta name="author" content="Darryl Tanzil">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9MBTPKTNB"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-M9MBTPKTNB');
@@ -35,58 +43,62 @@
 <!--        <a href="#soft-dev">Projects</a>-->
 <!--        &lt;!&ndash; Add other navigation links as needed &ndash;&gt;-->
 <!--    </nav>-->
-    <script>
-        let lastScrollTop = 0;
-        const navbar = document.getElementById('navbar');
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
 
-        window.addEventListener('scroll', function() {
-            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    window.addEventListener('scroll', function () {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (currentScroll > lastScrollTop) {
-                navbar.style.top = '-50px';
-            } else {
-                navbar.style.top = '0';
-            }
-
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        }, false);
-    </script>
-    <style>
-        @media screen and (max-width: 768px) {
-            #navbar {
-                display: none;
-            }
+        if (currentScroll > lastScrollTop) {
+            navbar.style.top = '-50px';
+        } else {
+            navbar.style.top = '0';
         }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, false);
+</script>
+<style>
+    @media screen and (max-width: 768px) {
         #navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            color: black;
-            padding: 20px;
-            transition: top 0.3s;
+            display: none;
         }
+    }
 
-        #navbar a {
-            color: black;
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 16px;
-            font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-            font-size: 20px;
-            --blur: 100;
-            --opacity: 0;
-        }
-        #navbar a:hover {
-        }
-    </style>
-    <div class="container" tg-name="blur" tg-from="0" tg-to="100" tg-edge="inset">
-        <div class="container" tg-name="opacity" tg-from="1" tg-to="0">
-            <div class="sticky" id="particles-js" style="z-index: -1">
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        color: black;
+        padding: 20px;
+        transition: top 0.3s;
+    }
+
+    #navbar a {
+        color: black;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: 20px;
+        --blur: 100;
+        --opacity: 0;
+    }
+
+    #navbar a:hover {
+    }
+</style>
+<div class="container" tg-name="blur" tg-from="0" tg-to="100" tg-edge="inset">
+    <div class="container" tg-name="opacity" tg-from="1" tg-to="0">
+        <div class="sticky" id="particles-js" style="z-index: -1">
                 <span style="text-align: center;position:absolute;">
-                    <div class="typed-out"><span style="font-size: 2rem;">Hello world,</span> <br> I'm Darryl Tanzil. <span class="blinking-cursor"
+                    <div class="typed-out"><span
+                            style="font-size: 2rem;">Hello world,</span> <br> I'm Darryl Tanzil. <span
+                            class="blinking-cursor"
                             style="font-size: 3.4rem;position: absolute;padding-left: 10px;">|</span></div>
                     <span style="font-size: 2rem;"><a href="" class="typewrite" data-period="2000"
-                            data-type='[ "A 20 year old from Vancouver, Canada.", "A tech enthusiast and avid gamer.", "Sushi Lover.", "Love doing hackathons!" ]'>
+                                                      data-type='[ "A 20 year old from Vancouver, Canada.", "A tech enthusiast and avid gamer.", "Sushi Lover.", "Love doing hackathons!" ]'>
                             <span class="wrap"></span>
                         </a></span>
                     <script>
@@ -115,7 +127,9 @@
                             var that = this;
                             var delta = 100 - Math.random() * 100;
 
-                            if (this.isDeleting) { delta /= 2; }
+                            if (this.isDeleting) {
+                                delta /= 2;
+                            }
 
                             if (!this.isDeleting && this.txt === fullTxt) {
                                 delta = this.period;
@@ -156,247 +170,322 @@
                         };
                     </script>
                 </span>
-            </div>
-            <div class="container-2" id="about-me">
-                <div tg-name="_" tg-ref="body" tg-from="1" tg-to="10" tg-step="1" class="section-2" tg-edge="cover">
-                    <section tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
+        </div>
+        <div class="container-2" id="about-me">
+            <div tg-name="_" tg-ref="body" tg-from="1" tg-to="10" tg-step="1" class="section-2" tg-edge="cover">
+                <section tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
                         <span tg-name="opacity" tg-filter="2" tg-follow="container">
-                            🎓 A third year <p style="color: #546e9e;display: inline;">computer science and business major</p>
+                            🎓 A <p style="color: #546e9e;display: inline;">computer science and business major</p>
                             at the <a href="https://www.ubc.ca/about/">University of British Columbia.</a>
                         </span>
-                        <br /> <br />
-                        <span tg-name="opacity" tg-filter="3" tg-follow="container">
+                    <br/> <br/>
+                    <span tg-name="opacity" tg-filter="3" tg-follow="container">
                             ⚽️
-                            A previous Software Engineer Intern @ <img src="ea.png" width="auto" style="max-width:27%; width: auto;border-radius: 0px !important; transform: translateY(13%);image-rendering: -webkit-optimize-contrast !important; image-rendering: pixelated; filter: blur(0); -webkit-filter: blur(0);"/></b>.
+                            A previous Software Engineer Intern @ <img src="ea.png" width="auto"
+                                                                       style="max-width:27%; width: auto;border-radius: 0px !important; transform: translateY(13%);image-rendering: -webkit-optimize-contrast !important; image-rendering: pixelated; filter: blur(0); -webkit-filter: blur(0);"/></b>
+                        .
                         </span>
-                        <br /> <br />
-                        <span tg-name="opacity" tg-filter="4" tg-follow="container">🧑‍ Previously SWE'd @
-                            <p style="color: #546e9e;display: inline;" target="_blank"> 🏠 Su Casa Design</p>, & <p style="color: #546e9e;display: inline;" target="_blank"> 🎮 UBC Game Development. 
+                    <br/> <br/>
+                    <span tg-name="opacity" tg-filter="4" tg-follow="container">🧑‍ Previously SWE'd @
+                            <p style="color: #546e9e;display: inline;" target="_blank"> 🏠 Su Casa Design</p>, & <p
+                                style="color: #546e9e;display: inline;" target="_blank"> 🎮 UBC Game Development.
                             </p></span>
-                        <br /> <br />
-                        <span tg-name="opacity" tg-filter="5" tg-follow="container" id="experiences">
+                    <br/> <br/>
+                    <span tg-name="opacity" tg-filter="5" tg-follow="container" id="experiences">
                             💻 Experienced in React, ExpressJS, Node.JS, Java, Python, C#, C++, PHP, MySQL, and Unity & Salesforce development.
                         </span>
-                        <br /> <br />
-                        <span tg-name="opacity" tg-filter="6" tg-follow="container">Have any ideas?</span>
-                        <br>
-                        <br>
-                        <br>
-                        <span tg-name="opacity" class="pro">
+                    <br/> <br/>
+                    <span tg-name="opacity" tg-filter="6" tg-follow="container">Have any ideas?</span>
+                    <br>
+                    <br>
+                    <br>
+                    <span tg-name="opacity" class="pro">
                             <div style="text-align: center;">
-                            <img src="darryl_edited.jpeg" style="border-radius: 900px; width: 36%; overflow:hidden !important;"/>
+                            <img src="darryl_edited.jpeg"
+                                 style="border-radius: 900px; width: 36%; overflow:hidden !important;"/>
                             </div>
                             <h3 align="center">Connect with me. </h3>
                             <p align="left">
                             <ul class="flex-container">
                                 <li class="flex-item"><a href="https://github.com/darryltanzil/" target="blank"><img
-                                            align="center" height="150" width="150" src="github.png" /></a></li>
+                                        align="center" height="150" width="150" src="github.png"/></a></li>
                                 <li class="flex-item"><a href="https://www.linkedin.com/in/darryl-tanzil-670190183/"
-                                        target="_blank"><img align="center"
-                                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-                                            alt="darryltanzil" height="125" width="175" /></a></li>
-                                <li class="flex-item"><a href="https://youtube.com/playlist?list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K&si=U_OlutaefpF6fkJG" target="blank"><img
-                                            align="center" width="150" src="Youtube_logo.png" /></a></li>
+                                                         target="_blank"><img align="center"
+                                                                              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+                                                                              alt="darryltanzil" height="125"
+                                                                              width="175"/></a></li>
+                                <li class="flex-item"><a
+                                        href="https://youtube.com/playlist?list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K&si=U_OlutaefpF6fkJG"
+                                        target="blank"><img
+                                        align="center" width="150" src="Youtube_logo.png"/></a></li>
                                 <li class="flex-item"><a href="mailto:darryltanzil@gmail.com" target="blank"><img
-                                            align="center"
-                                            src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png"
-                                            alt="darryltanzil" height="105" width="175" /></a></li>
+                                        align="center"
+                                        src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png"
+                                        alt="darryltanzil" height="105" width="175"/></a></li>
 
                             </ul>
-                            
-                            </p>
+
+                        </p>
                         </span>
-                    </section>
-                    <div class="final-section">
-                        <div style="border: 10px solid rgb(200, 197, 197); padding:30px;padding-left: 30px;  border-radius: 30px; padding-bottom: 100px;">
+                </section>
+                <div class="final-section">
+                    <div style="border: 10px solid rgb(200, 197, 197); padding:30px;padding-left: 30px;  border-radius: 30px; padding-bottom: 100px;">
                         <h1> 🚧 My Experiences</h3>
+
                             • <a href="#internship">💻 Software Engineer Internships</a> <br>
-                                <a href="#ea" class="indent">• Electronic Arts ⚽️</a> - engineer for FC (FIFA), evaluated as exceptional intern<br> <br>
-                            • <a href="#soft-dev">🤖 Recent Software Projects</a> <br>
-                                <a href="#yudo" class="indent">• Yudo Fitness Trainer 🏆</a> - 1st place / 665, realtime exercise program<br>
-                                <a href="#dsalgos" class="indent">• Data Structures + Algorithms Youtube Channel</a> - educational CS tutorials<br>
-                                <a href="#soap" class="indent">• Soapify</a> - app which cleans song lyrics <br>
-                                <a href="#cyber" class="indent">• Cybercision</a> - visual novel video game, won audience choice award @ UBC<br>
-                                <a href="#min-ai" class="indent">• Minutes.AI</a> - use AI to produce meeting notes for you <br>
+                            <a href="#ea" class="indent">• Electronic Arts ⚽️</a> - engineer for FC (FIFA), evaluated as
+                            <b style="color: green;">exceptional intern</b><br> <br>
+
+                            • <a href="#fullstack">🤖 Fullstack Software Projects </a> <br>
+                            <a href="#yudo" class="indent">• Yudo Fitness Trainer 🏆</a> - <b style="color: green;">1st place / 665</b>, realtime
+                            exercise program<br>
+                            <a href="#ta" class="indent">• Tech Apparel</a> - founded company which develops "qr-code"
+                            t-shirts<br>
+                            <a href="#soap" class="indent">• Soapify</a> - app which cleans song lyrics <br>
+                            <a href="#min-ai" class="indent">• Minutes.AI</a> - use AI to produce meeting notes for you <br>
+                            <a href="#flei" class="indent">• Faith Life E-institute</a> - created bible study
+                            application for non-profit<br>
+                            <a href="#fuze" class="indent">• FuZe Chrome Extension</a> - auto open zoom links you'd
+                            otherwise forget<br>
                             <br>
-                            • <a href="#archive">⚙️ Previous Software Projects</a> <br>
-                                <a href="#ta" class="indent">• Tech Apparel</a> - founded company which develops "qr-code" t-shirts<br>
-                                <a href="#flei" class="indent">• Faith Life E-institute</a> - created bible study application for non-profit<br>
-                                <a href="#charitize" class="indent">• Charitize</a> - decentralized charity donation concept<br>
-                                <a href="#fuze" class="indent">• FuZe Chrome Extension</a> - auto open zoom links you'd otherwise forget<br>
-                                <a href="#basemap" class="indent">• Basemap Optimizer</a> - optimizes maps in mazes<br>
-                                <a href="#kinzoo" class="indent">• Kinzoo Product</a> - consulted for Kinzoo, a children's messaging platform<br>
-                                <a href="#areward" class="indent">• AReward ProduHacks Submission</a> - online AR shopping concept<br>
-                        </div>
-                        <br> <br> <br>
-                        <h2 align="left" id="internship">💻 Software Engineer Internships</h2>
-                        <a href="blogs/electronic-arts.html" id="ea">⚽️ Electronic Arts</a> (8 months, May 2023 - December 2023)
-                        As a backend software engineer intern working on Electronic Arts' flagship video game, FC 24, I worked on the microservices and internal libraries of the servers behind the gamemode FUT. At the end-of-year performance review, I was evaluated as an exceptionally performing intern by the tech lead and development director.
-                        Here's a <a href="blogs/electronic-arts.html">blog</a> explaining what I worked on.<span class="technologies">- Java, Kotlin, Python, Jenkins, SQL, MySQL, Perforce, Google Cloud Platform, Maven, Jira</span>
-                        <br> <br>
-                        <a href="blogs/electronic-arts.html"><img src="ea-sports.png" style="width: 100%"/></a>
-                        <br> <br> <br>
-                        <h2 align="left" id="soft-dev"> 🤖 Recent Software Projects</h2>
-                        <p align="left">
-                           
-                            <a href="https://github.com/darryltanzil/Yudo" id="yudo">Yudo Fitness Trainer</a>
-                            <b style="color: green;"> 🏆 First Place against 665 participants at NwHacks 2023, Western Canada's Largest Hackathon</b>. Uses a custom-developed exercise detection algorithm, self-created datasets, TensorFlow AI, and Chat-GPT3 to help users improve their form and state relative accuracy score, feedback, and compliments/criticisms while doing various exercises. <span class="technologies">-
+                            • <a href="#cplusplus">⚙️ C++ & C# Projects</a> <br>
+                            <a href="#webserver" class="indent">• Multithreaded HTTP webserver</a> - host data with TCP, sockets, caching<br>
+                            <a href="#cyber" class="indent">• Cybercision</a> - visual novel video game, <b style="color: green;">won audience
+                            choice award @ UBC</b><br>
+                            <a href="#basemap" class="indent">• Basemap Optimizer</a> - optimizes paths to bases in maps <br><br>
+
+                            • <a href="#educational">📖 Educational Content</a> <br>
+                            <a href="#dsalgos" class="indent">• Data Structures + Algorithms Youtube Channel</a> -
+                            <b style="color: green;">60+ CS tutorial videos</b><br>
+
+                            <br>
+                            • <a href="#product">📊️ Product Management & Consulting</a> <br>
+                            <a href="#charitize" class="indent">• Charitize</a> - decentralized charity donation concept<br>
+                            <a href="#kinzoo" class="indent">• Kinzoo Product</a> - consulted for Kinzoo, a children's
+                            messaging platform<br>
+                            <a href="#areward" class="indent">• AReward ProduHacks Submission</a> - online AR shopping
+                            concept<br>
+                    </div>
+                    <br> <br> <br>
+                    <h2 align="left" id="internship">💻 Software Engineer Internships</h2>
+                    <a href="blogs/electronic-arts.html" id="ea">⚽️ Electronic Arts</a> - (8 months, May 2023 - December
+                    2023)
+                    As a backend software engineer intern working on Electronic Arts' flagship video game, FC 24, I
+                    worked on the microservices and internal libraries of the servers behind the gamemode FUT. At the
+                    end-of-year performance review, I was evaluated as an exceptionally performing intern by the tech
+                    lead and development director.
+                    Here's a <a href="blogs/electronic-arts.html">blog</a> explaining what I worked on.<span
+                        class="technologies">- Java, Kotlin, Python, Jenkins, SQL, MySQL, Perforce, Google Cloud Platform, Maven, Jira</span>
+                    <br> <br>
+                    <a href="blogs/electronic-arts.html"><img src="ea-sports.png" style="width: 100%"/></a>
+                    <br> <br> <br>
+                    <h2 align="left" id="fullstack"> 🤖 Fullstack Software Projects</h2>
+                    <p align="left">
+
+                        <a href="https://github.com/darryltanzil/Yudo" id="yudo">Yudo Fitness Trainer</a> -
+                        <b style="color: green;"> 🏆 First Place against 665 participants at NwHacks 2023, Western
+                            Canada's Largest Hackathon</b>. Uses a custom-developed exercise detection algorithm,
+                        self-created datasets, TensorFlow AI, and Chat-GPT3 to help users improve their form and state
+                        relative accuracy score, feedback, and compliments/criticisms while doing various exercises.
+                        <span class="technologies">-
                                 Tensorflow, BlazePose, Chat-GPT3, React, Express.JS, Node.JS, Axios, Figma</span> <br>
-                            <br>
-                            <a href="https://github.com/darryltanzil/Yudo"><img src="Yudo.png" style="width: 100%"/></a>
-                            <br /> <br />
-                            <a href="https://youtube.com/playlist?list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K&si=U_OlutaefpF6fkJG" id="dsalgos">Data Structures + Algorithms Youtube Channel</a>
-                            Youtube Channel where I explain data structures and algorithms problems and concepts, conduct technical interviews for others, and get technically interviewed! <span class="technologies"> - Python, Data structures and Algorithms</span><br>
-                            <br>
-                            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/videoseries?si=V73PsfXFH07wSO7D&amp;list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <br /> <br />
-                            <a href="https://github.com/darryltanzil/soapify" id="soap">Soapify</a> App that generates
-                            clean versions of songs from your Spotify playlist. Crosschecks tempo, duration, etc. to find equivalent songs.<span class="technologies"> - React,
+                        <br>
+                        <a href="https://github.com/darryltanzil/Yudo"><img src="Yudo.png" style="width: 100%"/></a>
+                        <br/> <br/>
+
+                        <a href="https://sown.io/techp/" id="ta"> Tech Apparel </a> - Founder & President of student
+                        company, backed by the <a href="https://jabc.ca/programs/cp/">JABC company initiative</a>. Produced & sold 50 clothes with QR codes and software allowing you to set & change the destination of the QR. Delegated tasks to 8 members and coordinated with local t-shirt & printing vendors, as well
+                        as various clothing outlets to sell to. I ensured that user data was encrypted via a SHA-256 algorithm in order to ensure customer safety.
+                        <span class="technologies">- MySQL, PHP, HTML5, CSS,
+                                JS</span><br><br>
+                        <a href="https://sown.io/techp/"><img src="Techie.jpeg" style="width: 100%"/></a>
+                        <br><br>
+
+                        <a href="https://github.com/darryltanzil/soapify" id="soap">Soapify</a> - App which takes playlists and cleans lyrics through an algorithm that cross-checks tempo, duration, time signature,
+                        and other stats of explicit song with similar equivalents, comparing non-explicit ones to returns matches.<span class="technologies"> - React,
                                 Node.JS, Axios, Spotify Web
                                 API</span> <br><br>
-                            <a href="https://github.com/darryltanzil/soapify"><img src="soapify.png" style="width: 100%" /></a>
-                            <br /><br>
-                            <a href="https://engineereng.itch.io/cybercision" id="cyber">Cybercision</a> A Cybernetic Surgeon Simulator game developed on the Unity platform. Team project completed as part of UBC Game development.<span class="technologies">- C#</span> <br>
-                            <br>
-                            <a href="https://engineereng.itch.io/cybercision"><img src="https://img.itch.zone/aW1nLzExNzI0NDIwLmpwZWc=/original/T6mbZh.jpeg" style="width: 100%; height: 500px;"/></a>
-                            <br><br><br>
-                            <h2 align="left" id="archive">⚙️ Previous Software Projects</h2>
+                        <a href="https://github.com/darryltanzil/soapify"><img src="soapify.png"
+                                                                               style="width: 100%"/></a>
+                        <br/><br>
 
-                            <a href="https://sown.io/techp/" id="ta"> Tech Apparel </a> Founder / President of student
-                            company, sold t-shirts with unique
-                            embedded QR Codes; when scanned, redirected to this website where user could initialize any
-                            link they wanted, and it would redirect to that link in future. User could then update their
-                            link at any point with account. <span class="technologies">- MySQLi, PHP, HTML5, CSS,
-                                JS</span><br><br>
-                            <a href="https://sown.io/techp/"><img src="Techie.jpeg" style="width: 100%" /></a>
-                            <br><br>
-                            <a href="https://github.com/eqzhou81/Minutes.ai" id="min-ai">Minutes.AI</a> Use AI to write
-                            complete notes for your meetings.
-                            Given Realtime audio data from meetings, Minutes.ai transcribes, separates into idea sized
-                            chunks of sentences, summarizes, and writes bullet points.<span class="technologies">-
+                        <a href="https://github.com/eqzhou81/Minutes.ai" id="min-ai">Minutes.AI</a> - Use AI to write
+                        complete notes for your meetings.
+                        Given Realtime audio data from meetings, Minutes.ai transcribes, separates into idea sized
+                        chunks of sentences, summarizes, and writes bullet points.<span class="technologies">-
                                 React, Node.JS, Express.JS,
                                 AssemblyAI API, GPT-3 OpenAI API, Figma </span> <br>
-                            <br>
-                            <a href="https://github.com/eqzhou81/Minutes.ai"><img src="minutes-ai.png"/></a>
-                            <br><br><br>    
-                            <a href="https://github.com/darryltanzil/auto-zoom" id="fuze">FuZe</a> Chrome extension that
-                            opens zoom links automatically - <span class="technologies">HTML5, CSS,
-                                Chrome.api</span><br><br>
-                            <a href="https://github.com/darryltanzil/auto-zoom"><img src="FuZe.png"
-                                    style="width: 100%" /></a>
-                            <br><br>
-                            <a href="https://flei.ca/" id="flei"> Faith Life E-institute</a>
-                            Developed a Bible Study Web Application. <span class="technologies">- Phone
-                                Gap, React Native</span>
-                            <br><br>
-                            <a href="https://flei.ca/"><img src="flei.png" style="width: 100%" /></a>
-                            <br /> <br />
-                            <a href="https://devpost.com/software/charitize" id="charitize"> Charitize </a> - Decentralized App that distributes
-                            charity funds directly to volunteers instead of the charity, to fight corruption. 
-                            <span class="technologies">- React, TailwindCSS, Node.JS, Firebase
-                            </span><br><br>
-                            <a href="https://devpost.com/software/charitize"><img src="charitize.jpeg" style="width: 100%" /></a>
-                            <br><br>
-                            <a href="https://github.com/darryltanzil/basefinder" id="basemap">Basemap Optimizer</a> -
-                            Uses BFS Algorithm, RGB encoding, and self-implemented data structures to determine the 'longest shortest path' within a maze. <span class="technologies">- C++</span> <br>
-                            <br>
-                            <a href="https://github.com/darryltanzil/basefinder"><img src="basefinder.png" style="width: 100%; height: 500px;"/></a>
-                            <br /><br>
-                            <h2 align="left" id="pm"> 📊 Completed Product Management Projects</h3><br>
-                            Kinzoo Product Management Sprint
-                            <a href="https://www.youtube.com/watch?v=qzdiSpkuVqo" id="kinzoo">Video Demo</a> |
-                            <a
-                                href="https://docs.google.com/presentation/d/1OQFu0e4WUZy4bkV535ysrEgoVuu7v0Q3NnpOZIsl1Eg/edit?usp=sharing">Slides</a>
-                            <br>
-                            Product management competition in which me and my team analyzed an existing app, and
-                            determined an effective way to increase user retention, building a working prototype.
-                            <span style="color: green !important;">Won recognition as most innovative solution.</span> - <span class="technologies">Figma</span>
-                            <br><br><br>
+                        <br>
+                        <a href="https://github.com/eqzhou81/Minutes.ai"><img src="minutes-ai.png"/></a>
+                        <br><br>
 
-                            AReward ProduHacks Submission <a href="https://devpost.com/software/areward" id="areward">Devpost</a> |
-                            <a
+                        <a href="https://flei.ca/" id="flei"> Faith Life E-institute</a> -
+                        Over a summer, I collaborated with a backend developer to create the front-end of a Bible Study Web Application for a non-profit. <span class="technologies">- Phone
+                                Gap, React Native</span>
+                        <br><br>
+                        <a href="https://flei.ca/"><img src="flei.png" style="width: 100%"/></a>
+                        <br/> <br/>
+
+                        <a href="https://github.com/darryltanzil/auto-zoom" id="fuze">FuZe</a> - Chrome extension that
+                        opens zoom links automatically. - <span class="technologies">HTML5, CSS,
+                                Chrome.api</span><br><br>
+                        <a href="https://github.com/darryltanzil/auto-zoom"><img src="FuZe.png"
+                                                                                 style="width: 100%"/></a>
+                        <br><br>
+
+                        <h2 align="left" id="cplusplus"> 🤖 C++ & C# Software Projects</h2>
+
+                        <a href="https://github.com/darryltanzil/webserver" id="webserver">Multithreaded HTTP Web Server</a> -
+                    My implementation of a web server in C++ with caching, TCP sockets, and a built-in thread pool for handling multiple client connections concurrently. The web server serves static HTML content from an "index.html" file and responds to incoming HTTP requests.
+                        <span class="technologies">-
+                                    C++, Cmake</span> <br>
+                        <br>
+                        <a href="https://github.com/darryltanzil/webserver"><img src="webserver.png" style="width: 100%"/></a>
+                        <br/> <br/>
+                        <a href="https://engineereng.itch.io/cybercision" id="cyber">Cybercision</a> - A Cybernetic
+                        Surgeon Simulator game developed on the Unity platform. I collaborated cross-functionally with artists, designers, writers, and other engineers to deliver a product which won <b style="color:green">audience choice award</b> at UBC's annual game developer showcase. <span class="technologies">- C#</span> <br>
+                        <br>
+                        <a href="https://engineereng.itch.io/cybercision"><img
+                                src="https://img.itch.zone/aW1nLzExNzI0NDIwLmpwZWc=/original/T6mbZh.jpeg"
+                                style="width: 100%; height: 500px;"/></a>
+                        <br><br>
+                        <a href="https://github.com/darryltanzil/basefinder" id="basemap">Basemap Optimizer</a> -
+                        Uses BFS Algorithm, RGB encoding, and self-implemented data structures to determine the 'longest
+                        shortest path' within a maze. <span class="technologies">- C++</span> <br>
+                        <br>
+                        <a href="https://github.com/darryltanzil/basefinder"><img src="basefinder.png"
+                                                                                  style="width: 100%; height: 500px;"/></a>
+                        <br/><br>
+                        <h2 align="left" id="educational"> 📖Educational Content</h2>
+                        <a href="https://youtube.com/playlist?list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K&si=U_OlutaefpF6fkJG"
+                           id="dsalgos">Data Structures + Algorithms Youtube Channel</a> -
+                    Youtube Channel where I explain data structures and algorithms problems and concepts, conduct
+                        technical interviews for others, and get technically interviewed! <span class="technologies"> - Python, Data structures and Algorithms</span><br>
+                        <br>
+                        <iframe width="100%" height="500px"
+                                src="https://www.youtube.com/embed/videoseries?si=V73PsfXFH07wSO7D&amp;list=PLRy29iU-9NtnBbjvD5EEbz4NHPWt1Yg6K"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        <br/> <br/>
+
+                    <h2 align="left" id="product">📊️ Product Management & Consulting</h2>
+
+                    <a href="https://devpost.com/software/charitize" id="charitize"> Charitize </a> - Decentralized App
+                    that distributes
+                    charity funds directly to volunteers instead of the charity, to fight corruption.
+                    <span class="technologies">- React, TailwindCSS, Node.JS, Firebase
+                            </span><br><br>
+                    <a href="https://devpost.com/software/charitize"><img src="charitize.jpeg" style="width: 100%"/></a>
+                    <br><br>
+                        Kinzoo Product Management Sprint -
+                        <a href="https://www.youtube.com/watch?v=qzdiSpkuVqo" id="kinzoo">Video Demo</a> |
+                        <a
+                                href="https://docs.google.com/presentation/d/1OQFu0e4WUZy4bkV535ysrEgoVuu7v0Q3NnpOZIsl1Eg/edit?usp=sharing">Slides</a>
+                        <br>
+                        Product management competition in which me and my team analyzed an existing app, and
+                        determined an effective way to increase user retention, building a working prototype.
+                        <span style="color: green !important;">Won recognition as most innovative solution.</span> -
+                        <span class="technologies">Figma</span>
+                        <br><br><br>
+
+                        AReward ProduHacks Submission -  <a href="https://devpost.com/software/areward" id="areward">Devpost</a>
+                        |
+                        <a
                                 href="https://docs.google.com/presentation/d/1RSOSg-pbzYt6M6Y0lt7sGgRW3t9bJTIUh9ZZY01wyyI/edit#slide=id.g1184ae3917e_0_68">Slides</a>
-                            <br>
-                            A web application centered around customer reviews and augmented reality, intended to re-invent the online
-                            shopping experience. - <span class="technologies">Figma, HTML5, CSS</span>
+                        <br>
+                        A web application centered around customer reviews and augmented reality, intended to re-invent
+                        the online
+                        shopping experience. - <span class="technologies">Figma, HTML5, CSS</span>
                         </p>
 
                         <br><br>
-                                <br>
+                        <br>
                         <h2 align="left">⚡ Languages and Tools:</h3>
-                        <p align="left" class="icons"> <a href="https://cordova.apache.org/" target="_blank"
-                                rel="noreferrer"> <img
+                            <p align="left" class="icons"><a href="https://cordova.apache.org/" target="_blank"
+                                                             rel="noreferrer"> <img
                                     src="https://www.vectorlogo.zone/logos/apache_cordova/apache_cordova-icon.svg"
-                                    alt="apachecordova" width="80" height="80" /> </a> <a href="https://aws.amazon.com"
-                                target="_blank" rel="noreferrer"> <img
+                                    alt="apachecordova" width="80" height="80"/> </a> <a href="https://aws.amazon.com"
+                                                                                         target="_blank"
+                                                                                         rel="noreferrer"> <img
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                                    alt="aws" width="80" height="80" /> </a> <a href="https://www.blender.org/"
-                                target="_blank" rel="noreferrer"> <img
+                                    alt="aws" width="80" height="80"/> </a> <a href="https://www.blender.org/"
+                                                                               target="_blank" rel="noreferrer"> <img
                                     src="https://download.blender.org/branding/community/blender_community_badge_white.svg"
-                                    alt="blender" width="80" height="80" /> </a> <a href="https://getbootstrap.com"
-                                target="_blank" rel="noreferrer"> <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                                    alt="bootstrap" width="80" height="80" /> </a> <a
-                                href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img
+                                    alt="blender" width="80" height="80"/> </a> <a href="https://getbootstrap.com"
+                                                                                   target="_blank" rel="noreferrer">
+                                <img
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+                                        alt="bootstrap" width="80" height="80"/> </a> <a
+                                    href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-                                    alt="csharp" width="80" height="80" /> </a> <a href="https://www.w3schools.com/css/"
-                                target="_blank" rel="noreferrer"> <img
+                                    alt="csharp" width="80" height="80"/> </a> <a href="https://www.w3schools.com/css/"
+                                                                                  target="_blank" rel="noreferrer"> <img
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                                    alt="css3" width="80" height="80" /> </a> <a href="https://git-scm.com/"
-                                target="_blank" rel="noreferrer"> <img
+                                    alt="css3" width="80" height="80"/> </a> <a href="https://git-scm.com/"
+                                                                                target="_blank" rel="noreferrer"> <img
                                     src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git"
-                                    width="80" height="80" /> </a> <a href="https://www.w3.org/html/" target="_blank"
-                                rel="noreferrer"> <img
+                                    width="80" height="80"/> </a> <a href="https://www.w3.org/html/" target="_blank"
+                                                                     rel="noreferrer"> <img
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                                    alt="html5" width="80" height="80" /> </a> <a
-                                href="https://www.adobe.com/in/products/illustrator.html" target="_blank"
-                                rel="noreferrer"> <img
+                                    alt="html5" width="80" height="80"/> </a> <a
+                                    href="https://www.adobe.com/in/products/illustrator.html" target="_blank"
+                                    rel="noreferrer"> <img
                                     src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
-                                    alt="illustrator" width="80" height="80" /> </a> <a
-                                href="https://ionicframework.com" target="_blank" rel="noreferrer"> <img
+                                    alt="illustrator" width="80" height="80"/> </a> <a
+                                    href="https://ionicframework.com" target="_blank" rel="noreferrer"> <img
                                     src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg" alt="ionic"
-                                    width="80" height="80" /> </a> <a href="https://www.java.com" target="_blank"
-                                rel="noreferrer"> <img
+                                    width="80" height="80"/> </a> <a href="https://www.java.com" target="_blank"
+                                                                     rel="noreferrer"> <img
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-                                    alt="java" width="80" height="80" /> </a> <a
-                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
-                                rel="noreferrer"> <img
+                                    alt="java" width="80" height="80"/> </a> <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                                    rel="noreferrer"> <img
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                                    alt="javascript" width="80" height="80" /> </a> <a href="https://www.mysql.com/"
-                                target="_blank" rel="noreferrer"> <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                                    alt="mysql" width="80" height="80" /> </a> <a href="https://nodejs.org"
-                                target="_blank" rel="noreferrer"> <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                                    alt="nodejs" width="80" height="80" /> </a> <a href="https://www.photoshop.com/en"
-                                target="_blank" rel="noreferrer"> <img
+                                    alt="javascript" width="80" height="80"/> </a> <a href="https://www.mysql.com/"
+                                                                                      target="_blank" rel="noreferrer">
+                                <img
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                                        alt="mysql" width="80" height="80"/> </a> <a href="https://nodejs.org"
+                                                                                     target="_blank" rel="noreferrer">
+                                <img
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                                        alt="nodejs" width="80" height="80"/> </a> <a
+                                    href="https://www.photoshop.com/en"
+                                    target="_blank" rel="noreferrer"> <img
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
-                                    alt="photoshop" width="80" height="80" /> </a> <a href="https://www.php.net"
-                                target="_blank" rel="noreferrer"> <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
-                                    alt="php" width="80" height="80" /> </a> <a href="https://www.python.org"
-                                target="_blank" rel="noreferrer"> <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-                                    alt="python" width="80" height="80" /> </a> <a href="https://reactjs.org/"
-                                target="_blank" rel="noreferrer"> <img
-                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-                                    alt="react" width="80" height="80" /> </a> <a href="https://reactnative.dev/"
-                                target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg"
-                                    alt="reactnative" width="80" height="80" /> </a> <a href="https://unity.com/"
-                                target="_blank" rel="noreferrer"> <img
+                                    alt="photoshop" width="80" height="80"/> </a> <a href="https://www.php.net"
+                                                                                     target="_blank" rel="noreferrer">
+                                <img
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+                                        alt="php" width="80" height="80"/> </a> <a href="https://www.python.org"
+                                                                                   target="_blank" rel="noreferrer">
+                                <img
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                                        alt="python" width="80" height="80"/> </a> <a href="https://reactjs.org/"
+                                                                                      target="_blank" rel="noreferrer">
+                                <img
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                                        alt="react" width="80" height="80"/> </a> <a href="https://reactnative.dev/"
+                                                                                     target="_blank" rel="noreferrer">
+                                <img src="https://reactnative.dev/img/header_logo.svg"
+                                     alt="reactnative" width="80" height="80"/> </a> <a href="https://unity.com/"
+                                                                                        target="_blank"
+                                                                                        rel="noreferrer"> <img
                                     src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity"
-                                    width="80" height="80" /> </a> <a href="https://zapier.com" target="_blank"
-                                rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg"
-                                    alt="zapier" width="80" height="80" /> </a> </p>
-                        <p><img align="center"
-                                src="https://github-readme-stats.vercel.app/api/top-langs?username=darryltanzil&amp;show_icons=true&amp;locale=en&amp;layout=compact"
-                                alt="darryltanzil" /></p>
-                        <div class="footholder"></div>
-                    </div>
+                                    width="80" height="80"/> </a> <a href="https://zapier.com" target="_blank"
+                                                                     rel="noreferrer"> <img
+                                    src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg"
+                                    alt="zapier" width="80" height="80"/> </a></p>
+                            <p><img align="center"
+                                    src="https://github-readme-stats.vercel.app/api/top-langs?username=darryltanzil&amp;show_icons=true&amp;locale=en&amp;layout=compact"
+                                    alt="darryltanzil"/></p>
+                            <div class="footholder"></div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>

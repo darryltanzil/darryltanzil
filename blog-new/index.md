@@ -27,31 +27,43 @@ h1 { border-bottom:1px dotted grey }
 <div id="md-post">
 # Featured
 
-## [Build online resume by markdown](inf-sys-vs-inf-systems.md)
-> ![markdown resume](http://casualwriter.github.io/casual-markdown/casual-markdown-cv.png)
-> date:2022/09/27, tags: `#markdown`
-> 
-> build blog site by markdown files in minutes.
-> host on github, or other static web hosting  
+[//]: # (## [Build online resume by markdown]&#40;inf-sys-vs-inf-systems.md&#41;)
 
-## [Markdown as blog](20220820-markdown-as-blog.md)
-> ![build blog site by markdown files](campo01.jpg)
-> date:2022/08/20, tags: `#markdown`
-> 
-> build blog site by markdown files in minutes.
-> host on github, or other static web hosting  
+[//]: # (> ![markdown resume]&#40;http://casualwriter.github.io/casual-markdown/casual-markdown-cv.png&#41;)
+
+[//]: # (> date:2022/09/27, tags: `#markdown`)
+
+[//]: # (> )
+
+[//]: # (> build blog site by markdown files in minutes.)
+
+[//]: # (> host on github, or other static web hosting  )
+
+[//]: # ()
+[//]: # (## [Markdown as blog]&#40;20220820-markdown-as-blog.md&#41;)
+
+[//]: # (> ![build blog site by markdown files]&#40;campo01.jpg&#41;)
+
+[//]: # (> date:2022/08/20, tags: `#markdown`)
+
+[//]: # (> )
+
+[//]: # (> build blog site by markdown files in minutes.)
+
+[//]: # (> host on github, or other static web hosting  )
 
 
 # Archives
 
 ### Jan 2024
 
+* 2024/01/12: [Thoughts on Stable Matching Problem](thoughts-on-stable-matching-problem.md) { #cpsc-320, #ubc, #featured }
 * 2024/01/11: [Database Overview](database-overview.md) { #cpsc-304, #ubc }
 * 2024/01/10: [Info Systems vs Info Tech](inf-sys-vs-inf-systems.md) { #comm-438, #ubc }
    
 ### Aug 2022
                     
-* 2022/08/20: [Markdown as blog](20220820-markdown-as-blog.md) { #markdown, #featured }
+* 2022/08/20: [Markdown as blog](20220820-markdown-as-blog.md) { #markdown}
 * 2022/08/10: [Is RegExp readable?](20220810-is-regexp-readable.md) { #regexp }
 
 ### July 2022
