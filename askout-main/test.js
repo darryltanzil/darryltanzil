@@ -28,7 +28,7 @@ function success()
 
      You have one of the thoughtful, and out-right amazing personalities I've ever met. Every day I fall in love
      with you all over again, from days when we decide to cook together, to times when we cuddle, to big occasions when you surpise me with a longboard :) <br > <br>
-     I love seeing you laugh, I love it when you complain about your classes or your arm after volleyball, I love it when you say I smell good, I love it when you size me up with those infathomably deep eyes of yours to try to decipher what I'm thinking, only to find out that there's nothing going on back there. <br>
+     I love seeing you laugh, I love it when you complain about your classes or your arm after volleyball, I love it when you say I smell good, I love it when you look at me to try to decipher what I'm thinking, only to find out that there's nothing going on back there. <br>
      <br>
      You're smart. <br />
      Beautiful. <br />
