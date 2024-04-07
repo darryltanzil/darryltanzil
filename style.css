@@ -8,7 +8,8 @@
   margin-left: 30px !important;
 }
 body {
-    padding: 0;
+  zoom: 83%;
+  padding: 0;
     margin: 0;
 }
 .technologies {
@@ -111,6 +112,9 @@ span:hover {
 }
 
 @media screen and (max-width: 767px){
+  body {
+    zoom: 110%;
+  }
   .sticky {
     font-size: 5rem !important; 
   }
