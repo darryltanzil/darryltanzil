@@ -117,9 +117,6 @@ span:hover {
 }
 
 @media screen and (max-width: 767px){
-  body {
-    zoom: 110%;
-  }
   .sticky {
     font-size: 5rem !important; 
   }
