@@ -10,7 +10,7 @@ class CSMajor:
     def __init__(self):
         self.name = "Darryl Tanzil"
         self.role = "Computer Science + Business Double Major @ UBC"
-        self.job = "Software Engineer Intern @ Electronic Arts"
+        self.job = "Software QA & Test Engineer @ Orbis Investment Management "
         self.socials = ["https://www.darrylt.me", "www.linkedin.com/in/darryl-tanzil-670190183/"]
         self.isLookingForInternships = True
 
