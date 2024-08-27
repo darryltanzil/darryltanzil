@@ -36,6 +36,7 @@
 </head>
 
 <body>
+<div id="message-box"></div>
 <!--    <nav id="navbar">-->
 <!--        <a href="#internship">Internships</a>-->
 <!--        <a href="#about-me">About Me</a>-->
@@ -86,6 +87,16 @@
     }
 
     #navbar a:hover {
+    }
+
+    #message-box {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
     }
 </style>
 <div class="container" tg-name="blur" tg-from="0" tg-to="100" tg-edge="inset">
@@ -172,11 +183,11 @@
             <div tg-name="_" tg-ref="body" tg-from="1" tg-to="10" tg-step="1" class="section-2" tg-edge="cover">
                 <section tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
                         <span tg-name="opacity" tg-filter="2" tg-follow="container">
-                            🎓 A <p style="color: #546e9e;display: inline;">computer science and business major</p>
+                            🎓 A <p style="color: #546e9e;display: inline;" class="hover-item" data-message="one of the best decisions in my life :) made many friends, learned ultra-relevant skills, grew as a person">computer science and business major</p>
                             at the <a href="https://www.ubc.ca/about/" target="_blank">University of British Columbia.</a>
                         </span>
                     <br/> <br/>
-                    <span tg-name="opacity" tg-filter="3" tg-follow="container">
+                    <span tg-name="opacity" tg-filter="3" tg-follow="container" class="hover-item" data-message="i grew up on EA's video games!">
                             ⚽️
                             A previous Software Engineer Intern @ <img src="ea.png" width="auto"
                                                                        style="max-width:27%; width: auto;border-radius: 0px !important; transform: translateY(13%);image-rendering: -webkit-optimize-contrast !important; image-rendering: pixelated; filter: blur(0); -webkit-filter: blur(0);"/></b>
@@ -238,7 +249,7 @@
                             • <a href="#internship">💻 Software Engineer Internships</a> <br>
                             <a href="#ea" class="indent">• Electronic Arts ⚽️</a> - engineer for FC (FIFA), working on FUT microservices<br>
                             <a href="#orbis" class="indent">• Orbis Investment Management 📈</a> - firm with $40 billion AUM<br>
-                            <a href="#sucasa" class="indent">• Su Casa Design 🏠</a> - internal software for drafting firm<br><br>
+                            <a href="#sucasa" class="indent">• Su Casa Design 🏠</a> - award-winning Canadian drafting firm<br><br>
 
                             • <a href="#fullstack">🤖 Fullstack Web Projects</a><br>
                             <a href="#yudo" class="indent"><mark>• Yudo Fitness Trainer 🏆</mark></a> - <b style="color: green;">1st place / 665</b>, realtime
@@ -274,7 +285,7 @@
                     </div>
                     <br> <br> <br>
                     <h2 align="left" id="internship">💻 Software Engineer Internships</h2>
-                    <a href="blogs/electronic-arts.html" id="ea">⚽️ Electronic Arts</a> - (8 months, May 2023 - December
+                    <a href="blogs/electronic-arts.html" id="ea" >⚽️ Electronic Arts</a> - (8 months, May 2023 - December
                     2023)
                     As a backend software engineer intern working on Electronic Arts' flagship video game, FC 24, I
                     worked on the microservices and internal libraries of the servers behind the gamemode FUT. At the
@@ -294,7 +305,7 @@
                     <br> <br>
                     <a href="https://www.orbis.com/ca/institutional/about-us/about-us"><img src="orbis.png" style="width: 100%"/></a>
                     <br> <br>
-                    <a href="https://www.orbis.com/ca/institutional/about-us/about-us" id="sucasa"> 🏠 Su Casa Design</a> - (June 2020 - May
+                    <a href="https://www.sucasa.ca" id="sucasa"> 🏠 Su Casa Design</a> - (June 2020 - May
                     2023)
                     Worked full-time, and part-time as a Salesforce Platform Developer for the internal tooling behind Su Casa Design, an architecture firm based in British Columbia.
                     This position was my first exposure into the IT world, and it allowed me to learn more about processing large data loads, and translating business needs into technical outcomes.
@@ -366,7 +377,7 @@
                     <iframe width="100%" height="500px" src="https://www.youtube.com/embed/PDaMZ3OyuGc?si=GLT4Xw5mQDtAM8O-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <br/> <br/>
                         <a href="https://engineereng.itch.io/cybercision" id="cyber">Cybercision</a> - A Cybernetic
-                        Surgeon Simulator game developed on the Unity platform. I collaborated cross-functionally with artists, designers, writers, and other engineers to deliver a product which won <b style="color:green">audience choice award</b> at UBC's annual game developer showcase. <span class="technologies">- C#</span> <br>
+                    Surgeon Simulator game developed on the Unity platform. I collaborated cross-functionally with artists, designers, writers, and other engineers to deliver a product which won <b style="color:green">audience choice award</b> at UBC's annual game developer showcase.<span class="technologies">- C#</span> <br>
                         <br>
                         <iframe width="100%" height="500px" src="https://www.youtube.com/embed/Jm9CNRt4ads?si=-S5uqb5TcC52cgZe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <br><br>
@@ -520,5 +531,19 @@
     </div>
 </div>
 </body>
+<script>
+    document.querySelectorAll('.hover-item').forEach(item => {
+        item.addEventListener('mouseenter', event => {
+            const messageBox = document.getElementById('message-box');
+            const message = event.target.getAttribute('data-message');
+            messageBox.textContent = message;
+            messageBox.style.display = 'block';
+        });
 
+        item.addEventListener('mouseleave', () => {
+            const messageBox = document.getElementById('message-box');
+            messageBox.style.display = 'none';
+        });
+    });
+</script>
 </html>
