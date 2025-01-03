@@ -15,6 +15,42 @@
     <h1>blog posts</h1>
     <p>As I get more free time from school and work, I'll add more stuff here :)</p>
     <p>
+    <h2>cheat sheets</h2>
+    Provided here are cheat sheets of courses I took at UBC.
+    <ul id="pdf-links"></ul>
+
+    <script>
+        const pdfFiles = [
+            "cheatsheet-cpsc-304-relational-databases.pdf",
+            "cheatsheet-cpsc-304-relational-databases-mt1.pdf",
+            "cheatsheet-cpsc-304-relational-databases-mt2.pdf",
+            "cheatsheet-cpsc-320-algorithms.pdf",
+            "cheatsheet-math-105-integral-calculus.pdf",
+            "cheatsheet-comm-190-quant-decision-making.pdf",
+            "cheatsheet-comm-204-operations-logistics.pdf",
+            "cheatsheet-comm-205-management-info-systems.pdf",
+            "cheatsheet-comm-296-marketing.pdf",
+            "cheatsheet-comm-296-mt1.pdf",
+            "cheatsheet-comm-298-finance.pdf",
+        ];
+
+        const pdfLinksContainer = document.getElementById("pdf-links");
+
+        // Dynamically create links for each PDF file
+        pdfFiles.forEach(file => {
+            const listItem = document.createElement("li");
+            const link = document.createElement("a");
+
+            // Point to the PDF in the cheat-sheets folder
+            link.href = `cheat-sheets/${file}`;
+            link.target = "_blank";
+            link.textContent = file; // Use a more descriptive text if desired
+
+            listItem.appendChild(link);
+            pdfLinksContainer.appendChild(listItem);
+        });
+    </script>
+
         <h2>web development</h2>
         <ul>
             <li>
@@ -25,9 +61,6 @@
         <ul>
             <li>
                 <a href="electronic-arts.html">electronic arts</a>
-            </li>
-            <li>
-                <a href="leetcode-progress.html">leetcode progress tracker</a>
             </li>
         </ul>
     </p>
