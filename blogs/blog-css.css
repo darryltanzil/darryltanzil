@@ -1,3 +1,47 @@
+/* Fade-in on page load */
+.fade-in {
+    opacity: 0;               /* Start invisible */
+    transform: translateY(20px);  /* Shift slightly downward */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover bounce on the back button */
+.back-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.2s ease;
+}
+.back-button:hover {
+    transform: translateY(-3px);
+}
+
+/* Hover highlight on PDF links */
+#pdf-links li a {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#pdf-links li a:hover {
+    color: #007bff; /* Slight color change on hover */
+}
+
+/* Slide-in animation for each PDF link (staggered appearance) */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.slide-in.slide-in-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .blog-post {
     margin: 0 auto;
     width: 750px;
