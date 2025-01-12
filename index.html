@@ -59,48 +59,6 @@
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     }, false);
 </script>
-<style>
-    @media screen and (max-width: 768px) {
-        #navbar {
-            display: none;
-        }
-    }
-
-    #navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        color: black;
-        padding: 20px;
-        transition: top 0.3s;
-    }
-
-    #navbar a {
-        color: black;
-        padding: 10px 15px;
-        text-decoration: none;
-        font-size: 16px;
-        font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-        font-size: 18px;
-        --blur: 100;
-        --opacity: 0;
-    }
-
-    #navbar a:hover {
-    }
-
-    #message-box {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        color: black;
-        padding: 10px;
-        border-radius: 5px;
-        display: none;
-        width:500px;
-        text-align: right;
-    }
-</style>
 <div class="container" tg-name="blur" tg-from="0" tg-to="100" tg-edge="inset">
     <div class="container" tg-name="opacity" tg-from="1" tg-to="0">
         <div class="sticky" id="particles-js" style="z-index: -1">
@@ -546,20 +504,6 @@
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
-<script>
-    document.querySelectorAll('.hover-item').forEach(item => {
-        item.addEventListener('mouseenter', event => {
-            const messageBox = document.getElementById('message-box');
-            const message = event.target.getAttribute('data-message');
-            messageBox.textContent = message;
-            messageBox.style.display = 'block';
-        });
-
-        item.addEventListener('mouseleave', () => {
-            const messageBox = document.getElementById('message-box');
-            messageBox.style.display = 'none';
-        });
-    });
-</script>
 </html>
