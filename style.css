@@ -10,10 +10,6 @@
 body {
   padding: 0;
   margin: 0;
-  transform: scale(0.9);
-  transform-origin: top center;
-  width: 111.11%;
-  margin-left: -5.56%;
   overflow-x: hidden;
   position: relative;
 }
@@ -260,6 +256,16 @@ a:hover {
 @media screen and (max-width: 768px) {
     #navbar {
         display: none;
+    }
+}
+
+/* Add scaling only for larger screens */
+@media screen and (min-width: 768px) {
+    body {
+        transform: scale(0.9);
+        transform-origin: top center;
+        width: 111.11%;
+        margin-left: -5.56%;
     }
 }
 
