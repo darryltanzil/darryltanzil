@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Deep Blue Chess Data Visualization</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="logo.png">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="title">Deep Blue Chess Data Visualization</div>
+    <div class="controls">
+      <div class="radio-group"
+        style="background-color: rgba(255,255,255,0.2); padding: 2px 20px; display: inline-block;">
+        <label>
+          <input type="radio" name="player-color" value="black"> <span>Black</span>
+        </label>
+        <label>
+          <input type="radio" name="player-color" value="white"> <span>White</span>
+        </label>
+        <label>
+          <input type="radio" name="player-color" value="all" checked> <span>All</span>
+        </label>
+      </div>
+
+      <label for="rating-filter">Rating:</label>
+      <select id="rating-filter" style="margin-right: 15px;">
+        <option value="all">All</option>
+        <option value="700-899">700-899</option>
+        <option value="900-1099">900-1099</option>
+        <option value="1100-1299">1100-1299</option>
+        <option value="1300-1499">1300-1499</option>
+        <option value="1500-1699">1500-1699</option>
+        <option value="1700-1899">1700-1899</option>
+        <option value="1900-2099">1900-2099</option>
+        <option value="2100-2299">2100-2299</option>
+        <option value="2300-2499">2300-2499</option>
+        <option value="2500-2699">2500-2699</option>
+      </select>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="vis-container">
+      <div class="row-container" style="height: calc(100vh - 80px);">
+
+        <!-- Left column: View 1 + View 2 (40%) -->
+        <div class="column-container" style="flex: 0 0 40%; display: flex; flex-direction: column; gap: 15px;">
+
+          <div id="vis1" class="chart-container" style="flex: 5;">
+            <div class="chart-header">View 1: Heatmap of Squares where Move resulted in a Check for <span
+                id="rating-type-label">Black</span></div>
+            <div class="chart-content" style="overflow: hidden; padding: 5px 10px 15px;">
+              <svg class="heatmap-svg"></svg>
+            </div>
+          </div>
+
+          <div id="vis2" class="chart-container" style="flex: 5;">
+            <div class="chart-header" style="display: flex; justify-content: space-between; align-items: center;">
+              <div>View 2: Opening Distribution by <span id="rating-type-label2">Black</span> Rating</div>
+            </div>
+            <div class="chart-content">
+              <svg class="stackedBarChart-svg"></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: View 3 + Explanation (60%) -->
+        <div class="column-container" style="flex: 0 0 60%; display: flex; flex-direction: column; gap: 15px;">
+          <div class="explanation-container" style="flex: 3;">
+            <div class="chart-header">View 3 Explanation</div>
+            <div class="chart-content" style="padding: 12px; text-align: left; font-size: 0.90rem;">
+              <h4 style="margin-top: 0; margin-bottom: 8px;">Opening Move Tree with Chessboard</h4>
+              <ul style="margin: 0; padding-left: 20px; line-height: 1.3;">
+                <li><strong>Colors</strong>: Each arc represents an ECO category with consistent coloring:</li>
+                <ul style="padding-left: 15px;">
+                  <li>Red: ECO A (Flank openings / e4 openings)</li>
+                  <li>Blue: ECO B (Semi-open / d4 openings)</li>
+                  <li>Green: ECO C (Open games / Nf3 openings)</li>
+                  <li>Purple: ECO D (Closed games / c4 and other openings)</li>
+                  <li>Orange: ECO E (Indian defenses / uncommon and irregular openings)</li>
+                </ul>
+                <li><strong>Arc Size</strong>: Proportional to number of games playing the move</li>
+                <li><strong>Interactions</strong>: Click on an arc to filter by that opening type</li>
+                <li><strong>Chessboard</strong>: Shows the board position based on selected moves</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="vis3" class="chart-container" style="flex: 7;">
+            <div class="chart-header">View 3: Opening Move Tree with Chessboard</div>
+            <div class="chart-content" style="display: flex; justify-content: center; align-items: center;">
+              <svg class="sunburstChart-svg" style="width: 100%; height: 100%;"></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div id="tooltip" class="tooltip"></div>
+
+  <!-- D3 bundle -->
+  <script src="js/d3.v6.min.js"></script>
+
+  <!-- Our JS code -->
+  <script src="js/heatmap.js"></script>
+  <script src="js/stackedBarChart.js"></script>
+  <script src="js/sunburstChart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
