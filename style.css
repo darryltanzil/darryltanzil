@@ -83,6 +83,27 @@ opacity: var(--opacity);
   padding-top: 30%;
   font-size: 1.1rem;
 }
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 90vw;
+  max-width: 1400px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.mobile-break {
+  opacity: 1 !important;
+}
+.project-card {
+  break-inside: avoid;
+}
+.project-card img {
+  border-radius: 12px;
+}
+.project-card iframe {
+  border-radius: 12px;
+}
 .container-2 {
   padding-bottom: 300px !important;
 }
@@ -179,6 +200,10 @@ span:hover {
   .final-section iframe {
     height: 220px !important;
     max-width: 100% !important;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
   }
   .section-2 .pro img {
     width: 55% !important;
@@ -377,6 +402,158 @@ a:hover {
     #navbar {
         display: none;
     }
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding: 40px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, transparent, #546e9e 2%, #546e9e 98%, transparent);
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Section header nodes */
+.timeline-node {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 50px;
+  background: white;
+  padding: 8px 20px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-node::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #3a5a8c;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #3a5a8c, 0 0 14px rgba(58, 90, 140, 0.45);
+  margin: 16px auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Grid with wide center gap for the timeline */
+.timeline .projects-grid {
+  position: relative;
+  z-index: 1;
+  gap: 80px;
+}
+
+/* Stagger: odd cards shift down */
+.timeline .projects-grid .project-card:nth-child(even) {
+  margin-top: 80px;
+}
+
+.timeline-content {
+  position: relative;
+  z-index: 1;
+  background: white;
+}
+
+/* All direct content in timeline sits above the line */
+.timeline .project-card,
+.timeline > a,
+.timeline > span,
+.timeline > br,
+.timeline iframe {
+  position: relative;
+  z-index: 1;
+}
+
+/* Card connector dots */
+.timeline .project-card {
+  background: white;
+}
+
+.timeline .project-card::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #8aa3c8;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #8aa3c8;
+  top: 16px;
+  z-index: 2;
+}
+
+/* Connector lines from card to center */
+.timeline .project-card::after {
+  content: '';
+  position: absolute;
+  top: 21px;
+  height: 2px;
+  background: #8aa3c8;
+  z-index: 1;
+}
+
+/* Left column cards: dot and line on the right */
+.timeline .projects-grid .project-card:nth-child(odd)::before {
+  right: -46px;
+}
+.timeline .projects-grid .project-card:nth-child(odd)::after {
+  right: -40px;
+  width: 40px;
+}
+
+/* Right column cards: dot and line on the left */
+.timeline .projects-grid .project-card:nth-child(even)::before {
+  left: -46px;
+}
+.timeline .projects-grid .project-card:nth-child(even)::after {
+  left: -40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-node {
+    text-align: left;
+    padding: 0;
+  }
+
+  .timeline-node::after {
+    display: none;
+  }
+
+  .timeline .projects-grid {
+    gap: 20px !important;
+  }
+
+  .timeline .projects-grid .project-card:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .timeline .project-card::before {
+    display: none;
+  }
+
+  .timeline .project-card::after {
+    display: none;
+  }
 }
 
 /* Add scaling only for larger screens */
