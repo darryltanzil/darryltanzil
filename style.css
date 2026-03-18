@@ -134,7 +134,7 @@ span:hover {
     width: 100% !important;
     padding: 0 24px !important;
     box-sizing: border-box !important;
-    font-size: 1rem !important;
+    font-size: 0.85rem !important;
     font-weight: 500 !important;
     letter-spacing: -0.3px !important;
     line-height: 1.5em !important;
@@ -151,16 +151,19 @@ span:hover {
     filter: none !important;
     -webkit-filter: none !important;
   }
+  .section-2 span img[src*="hubspot_logo"] {
+    max-height: 38px !important;
+  }
   .final-section > p img,
   .final-section > a > img {
     max-width: 100% !important;
     width: 100% !important;
   }
   #experiences {
-    font-size: 1rem !important;
+    font-size: 0.85rem !important;
   }
   .final-section {
-    font-size: 0.95rem !important;
+    font-size: 0.82rem !important;
     padding-top: 10% !important;
   }
   .final-section div {
@@ -168,10 +171,10 @@ span:hover {
     border-width: 4px !important;
   }
   .final-section h1 {
-    font-size: 1.3rem !important;
+    font-size: 1.1rem !important;
   }
   .final-section h2 {
-    font-size: 1.15rem !important;
+    font-size: 1rem !important;
   }
   .final-section iframe {
     height: 220px !important;
